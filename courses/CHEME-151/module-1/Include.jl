@@ -27,3 +27,4 @@ using JLD2
 using PrettyTables
 using Clustering
 using ProgressMeter
+using Random
