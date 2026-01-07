@@ -1,6 +1,9 @@
 # setup paths -
 const _ROOT = pwd();
 const _PATH_TO_SRC = joinpath(_ROOT, "src");
+const _PATH_TO_DATA = joinpath(_ROOT, "data");
+const _PATH_TO_TMP = joinpath(_ROOT, "tmp");
+const _PATH_TO_FRAMES = joinpath(_ROOT, "frames");
 
 # check do we have a Manifest.toml file?
 using Pkg;
@@ -23,12 +26,4 @@ using Distances
 using JLD2
 using PrettyTables
 using Clustering
-using Distributions
-using NNlib
-
-# # load my own packages
-# include(joinpath(_PATH_TO_SRC, "Types.jl"));
-# include(joinpath(_PATH_TO_SRC, "Factory.jl"));
-# include(joinpath(_PATH_TO_SRC, "Cluster.jl"));
-
-
+using ProgressMeter
