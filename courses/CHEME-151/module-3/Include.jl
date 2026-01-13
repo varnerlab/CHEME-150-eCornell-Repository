@@ -25,18 +25,6 @@ using JSON
 using ColorVectorSpace
 using PrettyTables
 
-using VLDataScienceMachineLearningPackage
-using LinearAlgebra
-using BenchmarkTools
-using Statistics
-using Test
-using Images
-using TestImages
-using ImageMagick
-using ImageIO
-using DelimitedFiles
-using Plots
-
 # include my codes
 include(joinpath(_PATH_TO_SRC, "Types.jl"));
 include(joinpath(_PATH_TO_SRC, "Factory.jl"));
