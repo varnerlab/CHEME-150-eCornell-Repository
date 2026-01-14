@@ -24,11 +24,16 @@ using HTTP
 using JSON
 using ColorVectorSpace
 using PrettyTables
+using ImageMagick
+using Images
+using ImageIO
+using Plots
+using Colors
 
-# include my codes
-include(joinpath(_PATH_TO_SRC, "Types.jl"));
-include(joinpath(_PATH_TO_SRC, "Factory.jl"));
-include(joinpath(_PATH_TO_SRC, "Network.jl"));
-include(joinpath(_PATH_TO_SRC, "Handler.jl"));
-include(joinpath(_PATH_TO_SRC, "Compute.jl"));
-include(joinpath(_PATH_TO_SRC, "Eigendecomposition.jl"));
+# # include my codes
+# include(joinpath(_PATH_TO_SRC, "Types.jl"));
+# include(joinpath(_PATH_TO_SRC, "Factory.jl"));
+# include(joinpath(_PATH_TO_SRC, "Network.jl"));
+# include(joinpath(_PATH_TO_SRC, "Handler.jl"));
+# include(joinpath(_PATH_TO_SRC, "Compute.jl"));
+# include(joinpath(_PATH_TO_SRC, "Eigendecomposition.jl"));

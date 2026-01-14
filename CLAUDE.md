@@ -84,6 +84,8 @@ Check all mathematical notation for consistency and precision:
 **Blockquote Organization:**
 - Never have multiple consecutive blockquotes without connective text between them
 - Add at least one sentence of regular text between blockquotes to provide context and flow
+- Always add a transition sentence or phrase between a blockquote and a code cell
+- Do not use multi-level bullet points within blockquote sections
 - Blockquotes should be self-contained explanatory sections, not fragmented pieces
 - When presenting multi-step processes, consider using a single blockquote with internal structure rather than multiple separate blockquotes
 
