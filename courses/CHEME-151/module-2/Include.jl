@@ -27,6 +27,7 @@ using PrettyTables
 using Distributions
 using Plots
 using Colors
+using BenchmarkTools
 
 # include my codes
 include(joinpath(_PATH_TO_SRC, "Types.jl"));
