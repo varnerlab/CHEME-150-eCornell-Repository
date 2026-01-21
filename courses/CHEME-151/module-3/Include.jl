@@ -29,6 +29,7 @@ using Images
 using ImageIO
 using Plots
 using Colors
+using Distributions
 
 # include my codes
 include(joinpath(_PATH_TO_SRC, "Types.jl"));
