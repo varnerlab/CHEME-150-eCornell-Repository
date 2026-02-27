@@ -29,6 +29,11 @@ using Test
 using Random
 using LinearAlgebra
 using Printf
+using DataFrames
+using PrettyTables
+
+# set the random seed for reproducibility
+Random.seed!(1234);
 
 # include source files -
 include(joinpath(_PATH_TO_SRC, "Proof.jl"));
