@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700px" height="380px" viewBox="0 0 700 380" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Fig-Boltzmann-Machine-Schematic</title>
+    <g id="Fig-Boltzmann-Machine-Schematic" stroke="none" fill="none" fill-rule="evenodd" stroke-width="1">
+        <g id="Group" transform="translate(5, 17)">
+            <path d="M239,27.3896458 L537,27.3896458 C545.836556,27.3896458 553,34.5530898 553,43.3896458 L553,111.166213 C553,120.002769 545.836556,127.166213 537,127.166213 L239,127.166213 C230.163444,127.166213 223,120.002769 223,111.166213 L223,43.3896458 C223,34.5530898 230.163444,27.3896458 239,27.3896458 Z" id="Rectangle" stroke="#D06030" stroke-width="2" fill="#FFF3EB" stroke-dasharray="8,5"></path>
+            <path d="M63,206.400545 L637,206.400545 C645.836556,206.400545 653,213.563989 653,222.400545 L653,309.741144 C653,318.5777 645.836556,325.741144 637,325.741144 L63,325.741144 C54.163444,325.741144 47,318.5777 47,309.741144 L47,222.400545 C47,213.563989 54.163444,206.400545 63,206.400545 Z" id="Rectangle" stroke="#2A5A99" stroke-width="2" fill="#EBF2FA" stroke-dasharray="8,5"></path>
+            <text id="Hidden-Nodes-(latent-variables)" fill="#C05020" fill-rule="nonzero" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="17" font-weight="bold">
+                <tspan x="260" y="16.7711172">Hidden Nodes (latent variables)</tspan>
+            </text>
+            <text id="Visible-Nodes-(data)" fill="#2A5A99" fill-rule="nonzero" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="17" font-weight="bold">
+                <tspan x="269.5" y="355.228883">Visible Nodes (data)</tspan>
+            </text>
+            <g transform="translate(115, 76.7888)" fill="#000000" id="Path" stroke="#AAAAAA" stroke-opacity="0.75" stroke-width="2">
+                <line x1="390" y1="0.489100817" x2="170" y2="0.489100817"></line>
+                <line x1="390" y1="0.489100817" x2="0" y2="178.521798"></line>
+                <line x1="390" y1="0.489100817" x2="235" y2="209.824251"></line>
+                <line x1="390" y1="0.489100817" x2="470" y2="178.521798"></line>
+                <line x1="170" y1="0.489100817" x2="0" y2="178.521798"></line>
+                <line x1="170" y1="0.489100817" x2="235" y2="209.824251"></line>
+                <line x1="170" y1="0.489100817" x2="470" y2="178.521798"></line>
+                <line x1="0" y1="178.521798" x2="235" y2="209.824251"></line>
+                <line x1="0" y1="178.521798" x2="470" y2="178.521798"></line>
+                <line x1="235" y1="209.824251" x2="470" y2="178.521798"></line>
+            </g>
+            <rect id="Rectangle" stroke="#CCCCCC" stroke-width="1.2" fill="#FFFFFF" x="355" y="62.6702997" width="80" height="29.346049" rx="6"></rect>
+            <text id="wℎ₁ℎ₂" fill="#555555" fill-rule="nonzero" font-family="HelveticaNeue-Italic, Helvetica Neue" font-size="16" font-style="italic" font-weight="normal">
+                <tspan x="374.5" y="78">w</tspan>
+                <tspan x="386.644" y="78" font-family="AppleSymbols, Apple Symbols">ℎ</tspan>
+                <tspan x="394.67525" y="78">₁</tspan>
+                <tspan x="400.59525" y="78" font-family="AppleSymbols, Apple Symbols">ℎ</tspan>
+                <tspan x="408.6265" y="78">₂</tspan>
+            </text>
+            <ellipse id="Oval" stroke="#C06030" stroke-width="2.5" fill="#F4956A" cx="505" cy="77.2779292" rx="38" ry="37.1716621"></ellipse>
+            <text id="h₁" fill="#FFFFFF" fill-rule="nonzero" font-family="HelveticaNeue-BoldItalic, Helvetica Neue" font-size="26" font-style="italic" font-weight="bold">
+                <tspan x="491.5" y="85.3106267">h₁</tspan>
+            </text>
+            <ellipse id="Oval" stroke="#C06030" stroke-width="2.5" fill="#F4956A" cx="285" cy="77.2779292" rx="38" ry="37.1716621"></ellipse>
+            <text id="h₂" fill="#FFFFFF" fill-rule="nonzero" font-family="HelveticaNeue-BoldItalic, Helvetica Neue" font-size="26" font-style="italic" font-weight="bold">
+                <tspan x="271.5" y="85.3106267">h₂</tspan>
+            </text>
+            <ellipse id="Oval" stroke="#2A5A99" stroke-width="2.5" fill="#4A86C8" cx="115" cy="255.310627" rx="38" ry="37.1716621"></ellipse>
+            <text id="v₁" fill="#FFFFFF" fill-rule="nonzero" font-family="HelveticaNeue-BoldItalic, Helvetica Neue" font-size="26" font-style="italic" font-weight="bold">
+                <tspan x="103" y="263.343324">v₁</tspan>
+            </text>
+            <ellipse id="Oval" stroke="#2A5A99" stroke-width="2.5" fill="#4A86C8" cx="350" cy="286.613079" rx="38" ry="37.1716621"></ellipse>
+            <text id="v₂" fill="#FFFFFF" fill-rule="nonzero" font-family="HelveticaNeue-BoldItalic, Helvetica Neue" font-size="26" font-style="italic" font-weight="bold">
+                <tspan x="338" y="294.645777">v₂</tspan>
+            </text>
+            <ellipse id="Oval" stroke="#2A5A99" stroke-width="2.5" fill="#4A86C8" cx="585" cy="255.310627" rx="38" ry="37.1716621"></ellipse>
+            <text id="v₃" fill="#FFFFFF" fill-rule="nonzero" font-family="HelveticaNeue-BoldItalic, Helvetica Neue" font-size="26" font-style="italic" font-weight="bold">
+                <tspan x="573" y="263.343324">v₃</tspan>
+            </text>
+            <line x1="612.5" y1="73.8542234" x2="543" y2="73.3651226" id="Path" stroke="#777777" stroke-width="1.5" fill="#000000" transform="translate(578, 73.3651) rotate(-0.4032) translate(-578, -73.3651)"></line>
+            <g transform="translate(612, 48.9101)">
+                <rect id="Rectangle" stroke="#BBBB88" stroke-width="1.3" fill="#FFFFF5" x="0" y="0" width="76" height="50.866485" rx="7"></rect>
+                <text id="sᵢ-∈-{−1,+1}" fill="#444444" fill-rule="nonzero" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal">
+                    <tspan x="2.5" y="19.6621253">sᵢ </tspan>
+                    <tspan x="15.604" y="19.6621253" font-family="AppleSymbols, Apple Symbols">∈</tspan>
+                    <tspan x="23.6704062" y="19.6621253"> {−1,+1}</tspan>
+                </text>
+            </g>
+            <text id="bᵢ-∈-ℝ" fill="#444444" fill-rule="nonzero" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal">
+                <tspan x="632.5" y="86.1798365">bᵢ </tspan>
+                <tspan x="646.906" y="86.1798365" font-family="AppleSymbols, Apple Symbols">∈</tspan>
+                <tspan x="654.972406" y="86.1798365"> </tspan>
+                <tspan x="658.864406" y="86.1798365" font-family="Menlo-Regular, Menlo">ℝ</tspan>
+            </text>
+            <g transform="translate(0, 31.3025)">
+                <rect id="Rectangle" stroke="#CCCCCC" stroke-width="1.3" fill="#FFFFFF" x="0" y="0" width="206" height="89.0163488" rx="8"></rect>
+                <text id="Legend" fill="#444444" fill-rule="nonzero" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="15" font-weight="bold">
+                    <tspan x="12" y="21.6512262">Legend</tspan>
+                </text>
+                <ellipse id="Oval" stroke="#C06030" stroke-width="1.5" fill="#F4956A" cx="28" cy="41.0844687" rx="11" ry="10.760218"></ellipse>
+                <text id="Hidden-node-(latent)" fill="#444444" fill-rule="nonzero" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal">
+                    <tspan x="48" y="46.0844687">Hidden node (latent)</tspan>
+                </text>
+                <ellipse id="Oval" stroke="#2A5A99" stroke-width="1.5" fill="#4A86C8" cx="28" cy="66.5177112" rx="11" ry="10.760218"></ellipse>
+                <text id="Visible-node-(data)" fill="#444444" fill-rule="nonzero" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal">
+                    <tspan x="48" y="71.5177112">Visible node (data)</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
