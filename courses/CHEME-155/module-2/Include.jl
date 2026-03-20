@@ -25,16 +25,8 @@ using Plots
 using Colors
 using Distances
 using NNlib
-using Distributions
-using PrettyTables
-using DataFrames
-using StatsBase
-using IJulia
+using Flux
+using ProgressMeter
 
-# load source files -
-include(joinpath(_PATH_TO_SRC, "BagOfWords.jl"));
-include(joinpath(_PATH_TO_SRC, "TFIDF.jl"));
-include(joinpath(_PATH_TO_SRC, "PMI.jl"));
-include(joinpath(_PATH_TO_SRC, "CBOW.jl"));
-include(joinpath(_PATH_TO_SRC, "SkipGram.jl"));
-include(joinpath(_PATH_TO_SRC, "NegativeSampling.jl"));
+# load my codes -
+include(joinpath(_PATH_TO_SRC, "Types.jl"));

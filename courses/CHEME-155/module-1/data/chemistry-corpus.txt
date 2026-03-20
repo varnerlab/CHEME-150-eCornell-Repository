@@ -1,0 +1,773 @@
+an acid donates a proton to a base during neutralization
+a base accepts a proton from an acid during neutralization
+strong acids fully dissociate in aqueous solution
+strong bases fully dissociate in aqueous solution
+weak acids partially dissociate in solution
+weak bases partially accept protons in solution
+hydrochloric acid is a strong acid that fully dissociates in water
+sodium hydroxide is a strong base that fully dissociates in water
+acetic acid is a weak acid that only partially donates its proton
+ammonia is a weak base that only partially accepts protons in solution
+an acid increases the concentration of hydronium ions in solution
+a base increases the concentration of hydroxide ions in solution
+the hydronium ion forms when an acid donates a proton to water
+the hydroxide ion forms when a base accepts a proton from water
+neutralization occurs when an acid reacts with a base to produce a salt and water
+mixing an acid with a base produces a salt and water
+the pH scale measures the hydronium ion concentration in solution
+a pH below seven indicates an acidic solution
+a pH above seven indicates a basic solution
+a pH of seven indicates a neutral solution
+strong acids lower the pH of a solution significantly
+strong bases raise the pH of a solution significantly
+a buffer resists changes in pH when a small amount of acid is added
+a buffer resists changes in pH when a small amount of base is added
+a buffer contains a weak acid and its conjugate base in solution
+a buffer contains a weak base and its conjugate acid in solution
+adding a small amount of acid to a buffer barely changes the pH
+adding a small amount of base to a buffer barely changes the pH
+the conjugate base of an acid forms after the acid donates its proton
+the conjugate acid of a base forms after the base accepts a proton
+a strong acid has a weak conjugate base
+a strong base has a weak conjugate acid
+the acid dissociation constant measures how readily an acid donates its proton
+a large acid dissociation constant means the acid is strong
+a small acid dissociation constant means the acid is weak
+the base dissociation constant measures how readily a base accepts a proton
+polyprotic acids can donate more than one proton per molecule
+sulfuric acid is a strong diprotic acid that donates two protons
+phosphoric acid is a weak triprotic acid that donates three protons sequentially
+acid-base titration is used to find the concentration of an unknown acid or base
+the equivalence point is where the moles of acid equal the moles of base added
+an indicator changes color near the equivalence point of a titration
+phenolphthalein is colorless in acidic solution and pink in basic solution
+litmus paper turns red in acid and blue in base
+the autoionization of water produces equal concentrations of hydronium and hydroxide
+water is amphoteric because it can donate or accept a proton
+amphoteric substances can act as either an acid or a base depending on conditions
+acids donate protons and bases accept protons according to the Bronsted-Lowry definition
+Lewis acids accept electron pairs and Lewis bases donate electron pairs
+when a strong acid donates its proton completely to water the solution becomes strongly acidic
+when a strong base accepts a proton from water completely the solution becomes strongly basic
+acetic acid donates a proton to water to form acetate ion and hydronium ion
+ammonia accepts a proton from water to form ammonium ion and hydroxide ion
+the strength of an acid depends on how readily it donates its proton to water
+the strength of a base depends on how readily it accepts a proton from water
+adding more acid to a buffered solution causes the conjugate base to accept the proton
+adding more base to a buffered solution causes the weak acid to donate a proton
+blood is buffered by carbonic acid and bicarbonate to maintain a pH near seven point four
+the bicarbonate buffer system prevents large pH changes when acids enter the bloodstream
+the stomach contains hydrochloric acid which creates an acidic environment for protein digestion
+antacids contain basic compounds such as calcium carbonate to neutralize excess stomach acid
+acid rain forms when sulfur dioxide and nitrogen oxides dissolve in water to form acidic solutions
+lakes become acidic when acid rain lowers the pH and harms aquatic life
+neutralization of a strong acid with a strong base produces a neutral salt solution
+neutralization of a weak acid with a strong base produces a basic salt solution
+neutralization of a strong acid with a weak base produces an acidic salt solution
+the Henderson-Hasselbalch equation relates buffer pH to the acid dissociation constant and concentration ratio
+a buffer at maximum capacity has equal concentrations of weak acid and its conjugate base
+buffer capacity increases as the concentrations of the weak acid and conjugate base increase
+the pH at the equivalence point of a weak acid titration is greater than seven
+the pH at the equivalence point of a weak base titration is less than seven
+diluting an acidic solution raises its pH toward seven
+diluting a basic solution lowers its pH toward seven
+concentrated sulfuric acid is a strong acid that fully dissociates to release two protons
+concentrated acetic acid is a weak acid that only partially donates protons in solution
+when hydrochloric acid is added to water the proton immediately transfers to a water molecule
+when sodium hydroxide dissolves in water it releases hydroxide ions that raise the pH
+an acid and a base react in a one-to-one molar ratio when they are both monoprotic
+the salt formed by a strong acid and strong base does not affect the pH of the solution
+the salt formed by a weak acid and strong base produces a basic solution due to hydrolysis
+when a weak acid partially dissociates in water an equilibrium is established between the acid and its conjugate base
+the position of the acid-base equilibrium is determined by the relative strengths of the two bases competing for the proton
+a stronger acid donates its proton more readily to a base than a weaker acid does
+a stronger base accepts protons more readily from an acid than a weaker base does
+the pKa of an acid is the negative logarithm of its acid dissociation constant
+a lower pKa value indicates a stronger acid with a greater tendency to donate a proton
+buffers are most effective within one pH unit of the pKa of the weak acid component
+the Henderson-Hasselbalch equation shows that buffer pH equals pKa when acid and base concentrations are equal
+carbonic acid in blood plasma acts as an acid by donating a proton to produce bicarbonate
+bicarbonate in blood plasma acts as a base by accepting a proton to form carbonic acid
+the kidneys regulate blood pH by controlling the excretion of acids and bases in urine
+enzyme activity is highly sensitive to pH because the ionization state of active site residues changes
+oxidation is the loss of electrons by an atom or molecule
+reduction is the gain of electrons by an atom or molecule
+oxidation and reduction always occur together in a redox reaction
+the oxidizing agent gains electrons and is itself reduced during the reaction
+the reducing agent loses electrons and is itself oxidized during the reaction
+in a redox reaction electrons transfer from the reducing agent to the oxidizing agent
+an increase in oxidation state indicates that oxidation has occurred
+a decrease in oxidation state indicates that reduction has occurred
+oxygen often acts as an oxidizing agent because it readily gains electrons
+hydrogen often acts as a reducing agent because it readily loses electrons
+iron is oxidized when it reacts with oxygen in the atmosphere to form rust
+copper is reduced when it deposits from solution onto a zinc surface
+a galvanic cell converts the energy of a spontaneous redox reaction into electrical energy
+an electrolytic cell uses electrical energy to drive a non-spontaneous redox reaction
+oxidation occurs at the anode in any electrochemical cell
+reduction occurs at the cathode in any electrochemical cell
+electrons flow from the anode to the cathode through the external circuit
+cations migrate toward the cathode and anions migrate toward the anode in solution
+the standard electrode potential measures the tendency of a half-reaction to proceed
+a more positive electrode potential indicates a stronger oxidizing agent
+a more negative electrode potential indicates a stronger reducing agent
+the standard cell potential is the difference between cathode and anode potentials
+a positive standard cell potential indicates a spontaneous reaction
+a negative standard cell potential indicates a non-spontaneous reaction
+balancing a redox reaction requires equal numbers of electrons lost and gained
+the half-reaction method divides a redox reaction into separate oxidation and reduction steps
+in acidic solution water and hydrogen ions are used to balance atoms in half-reactions
+in basic solution water and hydroxide ions are used to balance atoms in half-reactions
+zinc displaces copper from copper sulfate solution because zinc is more easily oxidized than copper
+a metal higher in the activity series displaces a metal lower in the series from solution
+corrosion is the unwanted oxidation of a metal by its environment
+galvanization protects iron by coating it with zinc which oxidizes preferentially
+electroplating uses electrolytic reduction to deposit a thin metal layer on a surface
+the standard hydrogen electrode is assigned a potential of zero and used as a reference
+the Nernst equation relates cell potential to temperature and the concentrations of reactants and products
+lithium-ion batteries store energy by reversibly oxidizing and reducing lithium compounds
+hydrogen fuel cells oxidize hydrogen gas to produce water and generate electrical energy
+photosynthesis is a biological redox process that reduces carbon dioxide to glucose using light energy
+cellular respiration oxidizes glucose to carbon dioxide and releases energy for cellular processes
+the oxidation of glucose during cellular respiration involves a series of electron transfer reactions
+transition metals can be oxidized to multiple oxidation states because of their partially filled d orbitals
+permanganate ion is a powerful oxidizing agent that accepts electrons and is reduced in acidic solution
+dichromate ion acts as an oxidizing agent and is reduced to chromium three in acidic solution
+bleach oxidizes colored organic molecules to remove stains by breaking their chromophores
+the Nernst equation predicts how cell potential changes when reactant concentrations differ from standard conditions
+corrosion of iron is accelerated by the presence of water and dissolved salts which improve conductivity
+cathodic protection prevents corrosion by making the metal a cathode in an electrochemical cell
+magnesium rods are used as sacrificial anodes to protect steel pipelines from oxidative corrosion
+the reduction of copper ions in solution produces solid copper metal at the cathode
+the oxidation of water at the anode during electrolysis produces oxygen gas
+in the chlor-alkali process electrolysis of brine produces chlorine gas at the anode and hydrogen gas at the cathode
+the activity of a metal as a reducing agent decreases from left to right across the activity series
+strong reducing agents are easily oxidized and readily donate electrons to other substances
+strong oxidizing agents are easily reduced and readily accept electrons from other substances
+the electrochemical series ranks half-reactions from most negative to most positive potential
+when two half-reactions are combined the one with higher potential proceeds as reduction
+the overall redox reaction is obtained by adding the balanced half-reactions together
+the stoichiometry of a redox reaction requires that electrons lost equal electrons gained
+in electrolysis the amount of substance deposited or dissolved is proportional to the charge passed
+Faraday's constant relates the charge in coulombs to the number of moles of electrons transferred
+the electrolysis of water produces hydrogen at the cathode and oxygen at the anode
+an exothermic reaction releases heat to the surroundings
+an endothermic reaction absorbs heat from the surroundings
+the enthalpy change is negative for an exothermic reaction
+the enthalpy change is positive for an endothermic reaction
+combustion is an exothermic process that releases heat and light to the surroundings
+dissolving ammonium nitrate in water is an endothermic process that absorbs heat from the surroundings
+breaking chemical bonds requires energy and is therefore endothermic
+forming chemical bonds releases energy and is therefore exothermic
+the net enthalpy change depends on the difference between bonds broken and bonds formed
+exothermic reactions transfer thermal energy from the system to the surroundings
+endothermic reactions transfer thermal energy from the surroundings into the system
+combustion of methane is exothermic because it releases more energy forming bonds than it absorbs breaking bonds
+dissolving potassium nitrate in water is endothermic because it absorbs energy from the solution
+Hess's law states that the enthalpy change of a reaction is independent of the pathway
+the standard enthalpy of formation is the enthalpy change when one mole of a compound forms from its elements
+the standard enthalpy of reaction is calculated from the enthalpies of formation of products and reactants
+entropy measures the degree of disorder or randomness of a system
+entropy increases when a solid dissolves to form an aqueous solution
+entropy increases when a liquid evaporates to form a gas
+entropy increases when a reaction produces more moles of gas than it consumes
+entropy decreases when a gas condenses to form a liquid
+entropy decreases when ions come together to form a crystalline solid
+the second law of thermodynamics states that the total entropy of an isolated system increases in spontaneous processes
+Gibbs free energy combines enthalpy and entropy to determine whether a reaction is spontaneous
+a negative Gibbs free energy change indicates the reaction is spontaneous at that temperature
+a positive Gibbs free energy change indicates the reaction is non-spontaneous at that temperature
+an exothermic reaction with increasing entropy is spontaneous at all temperatures
+an endothermic reaction with decreasing entropy is non-spontaneous at all temperatures
+an exothermic reaction with decreasing entropy is spontaneous only at low temperatures
+an endothermic reaction with increasing entropy is spontaneous only at high temperatures
+the heat capacity of a substance measures how much heat is required to raise its temperature by one degree
+water has an unusually high heat capacity because of extensive hydrogen bonding
+specific heat is the heat required to raise the temperature of one gram of a substance by one degree
+a calorimeter measures the heat released or absorbed during a chemical reaction
+the heat released by an exothermic reaction is absorbed by the water in a calorimeter
+bond dissociation energy is the energy required to break one mole of a covalent bond
+a reaction releases net heat when the bonds formed are stronger than the bonds broken
+a reaction absorbs net heat when the bonds broken are stronger than the bonds formed
+the heat of combustion of a fuel measures the energy released per mole when the fuel burns completely
+the heat of vaporization is the energy required to convert one mole of liquid to gas at the boiling point
+the heat of fusion is the energy required to convert one mole of solid to liquid at the melting point
+evaporation is endothermic because energy is required to overcome intermolecular attractions in the liquid
+condensation is exothermic because energy is released when gas molecules form intermolecular attractions
+freezing is exothermic because the liquid releases energy as it forms an ordered solid structure
+melting is endothermic because energy is needed to disrupt the ordered structure of the solid
+lattice energy is the energy released when gaseous ions come together to form an ionic crystal
+solvation energy is released when solvent molecules surround and stabilize dissolved ions
+the dissolution of an ionic compound is exothermic when solvation energy exceeds lattice energy
+the dissolution of an ionic compound is endothermic when lattice energy exceeds solvation energy
+the Gibbs free energy change is related to the equilibrium constant by delta G equals negative RT ln K
+at the boiling point the Gibbs free energy change for vaporization is zero because the system is at equilibrium
+a large negative enthalpy change favors spontaneity by releasing energy to the surroundings
+a large positive entropy change favors spontaneity by increasing the disorder of the system
+the temperature determines whether enthalpy or entropy dominates the Gibbs free energy change
+standard state conditions are defined as one atmosphere pressure and a specified temperature usually 298 kelvin
+the standard Gibbs free energy change predicts spontaneity only under standard state conditions
+exothermic reactions warm their surroundings by releasing thermal energy into the environment
+endothermic reactions cool their surroundings by absorbing thermal energy from the environment
+the enthalpy of a reaction can be measured using a bomb calorimeter at constant volume
+the enthalpy of a reaction can be measured using a coffee-cup calorimeter at constant pressure
+Hess's law allows enthalpy changes to be calculated by adding enthalpy changes of known reactions
+the enthalpy change of the reverse reaction is equal in magnitude but opposite in sign to the forward reaction
+standard enthalpies of formation are zero for elements in their standard states
+the enthalpy of combustion can be used to compare the energy content of different fuels
+photosynthesis is endothermic because plants absorb light energy to build glucose from carbon dioxide and water
+cellular respiration is exothermic because organisms release energy by oxidizing glucose to carbon dioxide
+the thermite reaction is highly exothermic and releases enough heat to melt iron metal
+dissolving calcium chloride in water is exothermic because the solvation energy exceeds the lattice energy
+dissolving ammonium chloride in water is endothermic because the lattice energy exceeds the solvation energy
+the heat released by burning a fuel can be calculated from its enthalpy of combustion and the amount burned
+the Haber process for ammonia synthesis is exothermic so lower temperatures favor greater ammonia yield
+increasing temperature shifts the equilibrium of an exothermic reaction away from the products
+increasing temperature shifts the equilibrium of an endothermic reaction toward the products
+exothermic processes in the body include ATP hydrolysis muscle contraction and oxidation of nutrients
+endothermic processes in the body include the evaporation of sweat which cools the skin surface
+a solid has a definite shape and a definite volume
+a liquid has a definite volume but takes the shape of its container
+a gas has neither a definite shape nor a definite volume
+solids have particles in fixed positions that vibrate about their equilibrium positions
+liquids have particles that can slide past each other while remaining close together
+gases have particles that move rapidly and are widely separated from each other
+melting converts a solid to a liquid by adding heat energy
+freezing converts a liquid to a solid by removing heat energy
+boiling converts a liquid to a gas by adding heat energy
+condensation converts a gas to a liquid by removing heat energy
+sublimation converts a solid directly to a gas without passing through the liquid phase
+deposition converts a gas directly to a solid without passing through the liquid phase
+the melting point is the temperature at which a solid converts to a liquid at a given pressure
+the boiling point is the temperature at which a liquid converts to a gas at a given pressure
+the melting point of ice is zero degrees Celsius at standard atmospheric pressure
+the boiling point of water is one hundred degrees Celsius at standard atmospheric pressure
+intermolecular forces hold particles together in liquids and solids
+stronger intermolecular forces result in higher melting and boiling points
+hydrogen bonds are strong intermolecular forces that raise the boiling points of small molecules
+water has a high boiling point because of extensive hydrogen bonding between molecules
+van der Waals forces are weak intermolecular forces present between all neutral molecules
+larger nonpolar molecules have stronger van der Waals forces and higher boiling points
+ionic solids have very high melting points because of strong electrostatic attractions between ions
+metallic solids conduct electricity because valence electrons move freely throughout the lattice
+covalent network solids like diamond are extremely hard and have very high melting points
+molecular solids have low melting points because only weak intermolecular forces hold molecules together
+the vapor pressure of a liquid increases as temperature increases
+a liquid boils when its vapor pressure equals the surrounding atmospheric pressure
+lowering external pressure lowers the boiling point of a liquid
+raising external pressure raises the boiling point of a liquid
+water boils at lower temperatures at high altitude because atmospheric pressure is reduced
+the critical temperature is the highest temperature at which a liquid phase can exist
+the critical pressure is the pressure required to liquefy a gas at its critical temperature
+the triple point is the unique temperature and pressure at which solid liquid and gas coexist in equilibrium
+a phase diagram shows which phase is stable at each combination of temperature and pressure
+dry ice sublimes at room temperature because the liquid phase of carbon dioxide is unstable at standard pressure
+surface tension results from intermolecular forces pulling surface molecules inward
+viscosity measures the resistance of a liquid to flow
+liquids with stronger intermolecular forces have higher viscosity and flow more slowly
+honey is more viscous than water because of stronger intermolecular interactions
+ice is less dense than liquid water because hydrogen bonding creates an open hexagonal lattice
+the anomalous density of ice allows it to float on liquid water insulating aquatic life beneath
+thermal expansion causes most substances to increase in volume when heated
+gases expand much more than liquids or solids when heated at constant pressure
+the kinetic molecular theory describes gas behavior in terms of the motion of its particles
+gas pressure arises from collisions of gas molecules with the walls of the container
+increasing temperature increases the average kinetic energy and speed of gas molecules
+increasing the number of gas molecules at constant volume increases the pressure
+compressing a gas at constant temperature increases both pressure and molecular collision frequency
+the ideal gas law relates the pressure volume temperature and number of moles of a gas
+real gases deviate from ideal behavior at high pressures and low temperatures
+liquefaction of gases occurs when pressure is high enough and temperature low enough to condense them
+the strong intermolecular forces in water account for its unusually high surface tension
+capillary action occurs when adhesive forces between liquid and container exceed cohesive forces
+the liquid in a capillary tube rises higher when the tube is narrower
+evaporation of a liquid from skin is endothermic and produces a cooling effect
+sweating is an evaporative cooling mechanism that removes heat from the body as water evaporates
+the high heat of vaporization of water makes it effective for temperature regulation in living organisms
+oil and water do not mix because water molecules form strong hydrogen bonds with each other
+nonpolar substances dissolve in nonpolar solvents because similar intermolecular forces allow mixing
+polar substances dissolve in polar solvents because dipole-dipole and hydrogen bonding interactions are favorable
+the solubility of a gas in liquid decreases as temperature increases
+the solubility of a gas in liquid increases as pressure increases according to Henry's law
+dissolved oxygen in water decreases at higher temperatures which can stress aquatic organisms
+the conversion of liquid water to steam requires a large input of energy because of hydrogen bonding
+steam engines exploit the large volume increase when liquid water boils to become steam
+freezing point depression occurs when a solute dissolves in a solvent and lowers its freezing point
+boiling point elevation occurs when a solute dissolves in a solvent and raises its boiling point
+salt is spread on icy roads because it dissolves and lowers the freezing point of water
+antifreeze lowers the freezing point of water in car radiators by dissolving in it
+the vapor pressure of a solution is lower than that of the pure solvent due to solute-solvent interactions
+a catalyst increases the reaction rate by lowering the activation energy
+a catalyst provides an alternative reaction pathway with a lower activation energy
+a catalyst is not consumed in the reaction and can be reused
+the activation energy is the minimum energy required for reactants to transform into products
+lowering the activation energy allows more molecules to react at a given temperature
+increasing temperature increases the reaction rate by giving more molecules enough energy to overcome the activation energy
+the Arrhenius equation relates the rate constant to temperature and activation energy
+a small reduction in activation energy by a catalyst causes a large increase in reaction rate
+homogeneous catalysts are in the same phase as the reactants in a reaction mixture
+heterogeneous catalysts are in a different phase from the reactants
+solid catalysts work by adsorbing reactant molecules onto their surface and weakening their bonds
+platinum and palladium catalysts in catalytic converters oxidize carbon monoxide to carbon dioxide
+rhodium catalysts in catalytic converters reduce nitrogen oxides to harmless nitrogen and oxygen
+zeolite catalysts crack large hydrocarbon molecules into smaller more useful fuel molecules
+iron catalysts in the Haber process speed up the synthesis of ammonia from nitrogen and hydrogen
+vanadium pentoxide catalyzes the oxidation of sulfur dioxide to sulfur trioxide in the Contact process
+enzymes are biological catalysts that accelerate biochemical reactions inside living cells
+enzymes lower the activation energy of biochemical reactions by stabilizing the transition state
+enzymes are highly specific and catalyze only particular reactions or types of reactions
+the active site of an enzyme binds its substrate with precise geometric and chemical complementarity
+the substrate molecule fits into the active site of the enzyme like a key fits a lock
+an enzyme-substrate complex forms when the substrate binds to the active site
+the products are released after the enzyme converts the substrate and the active site is regenerated
+enzyme activity depends on temperature and increases as temperature rises up to an optimum
+enzymes are denatured and lose catalytic activity at temperatures above their optimum
+enzyme activity depends on pH because ionization of active site residues affects binding
+competitive inhibitors bind to the active site and block substrate binding to reduce enzyme activity
+non-competitive inhibitors bind to a site other than the active site and reduce enzyme activity
+the reaction rate increases when reactant concentration increases because collisions are more frequent
+the rate law expresses reaction rate as a function of the concentration of reactants
+the rate constant is a proportionality factor that depends on temperature and activation energy
+a first-order reaction has a rate that is proportional to the concentration of one reactant
+a second-order reaction has a rate that depends on the square of one concentration or the product of two
+the half-life of a first-order reaction is constant and independent of reactant concentration
+collision theory states that a reaction occurs only when molecules collide with enough energy and correct orientation
+not every collision results in a reaction because most molecules lack the activation energy
+increasing the surface area of a solid reactant increases the rate by exposing more reactive sites
+a finely divided powder reacts faster than large lumps of the same material
+increasing pressure in a gas-phase reaction increases concentration and raises the collision frequency
+the transition state is the highest-energy arrangement of atoms along the reaction pathway
+the activation energy is the energy difference between the reactants and the transition state
+a reaction intermediate is a species that forms and is consumed during a multistep mechanism
+the rate-determining step is the slowest step in a multistep reaction mechanism
+the overall rate law for a multistep reaction is determined by the rate-determining step
+increasing the concentration of a catalyst can increase the reaction rate up to a point
+a catalyst lowers the activation energy equally for both the forward and reverse reactions
+a catalyst does not change the enthalpy change or the equilibrium constant of a reaction
+a catalyst allows equilibrium to be reached faster but does not shift the equilibrium position
+the catalytic efficiency of an enzyme is measured by how rapidly it converts substrate to product
+enzymes can increase reaction rates by factors of millions compared to uncatalyzed reactions
+enzymes are essential for life because metabolic reactions would be far too slow without catalysis
+temperature increases of ten degrees Celsius approximately double the rate of many biochemical reactions
+the rate of enzyme-catalyzed reactions levels off at high substrate concentrations because active sites become saturated
+allosteric enzymes can be activated or inhibited by molecules that bind at sites other than the active site
+feedback inhibition occurs when the product of a metabolic pathway inhibits an enzyme earlier in the pathway
+the lock-and-key model assumes the active site has a rigid shape that exactly matches the substrate
+the induced-fit model proposes that the active site changes shape slightly when the substrate binds
+chemical equilibrium occurs when the forward reaction rate equals the reverse reaction rate
+at equilibrium the concentrations of reactants and products remain constant over time
+the equilibrium constant K is the ratio of product concentrations to reactant concentrations at equilibrium
+a large equilibrium constant means the products are strongly favored at equilibrium
+a small equilibrium constant means the reactants are strongly favored at equilibrium
+Le Chatelier's principle states that a system at equilibrium shifts to oppose any applied change
+increasing the concentration of a reactant shifts equilibrium toward the products
+decreasing the concentration of a product shifts equilibrium toward the products
+increasing the concentration of a product shifts equilibrium toward the reactants
+decreasing the concentration of a reactant shifts equilibrium toward the reactants
+increasing temperature shifts equilibrium in the endothermic direction for any reaction
+decreasing temperature shifts equilibrium in the exothermic direction for any reaction
+increasing pressure shifts equilibrium toward the side with fewer moles of gas
+decreasing pressure shifts equilibrium toward the side with more moles of gas
+adding an inert gas at constant volume does not change the equilibrium position
+a catalyst speeds up both forward and reverse reactions equally and does not shift equilibrium
+the reaction quotient Q compares current concentrations to equilibrium concentrations
+when Q is less than K the reaction proceeds forward to produce more products
+when Q is greater than K the reaction proceeds in reverse to consume products
+the Haber process operates at high pressure to shift equilibrium toward ammonia production
+the Contact process uses moderate temperature to balance yield and rate in sulfuric acid production
+the solubility product Ksp equals the product of ion concentrations at equilibrium for sparingly soluble salts
+adding a common ion to a sparingly soluble salt solution decreases its solubility
+the common ion effect shifts the solubility equilibrium toward precipitation of the solid
+acid-base equilibria describe the partial dissociation of weak acids and bases in water
+the pKa of a weak acid is related to its equilibrium constant for proton donation
+weak acid equilibrium favors the undissociated form when the acid dissociation constant is small
+the equilibrium between a weak base and its conjugate acid determines the pH of a basic solution
+increasing temperature shifts the equilibrium of an endothermic reaction toward the products
+decreasing temperature shifts the equilibrium of an endothermic reaction away from the products
+increasing temperature shifts the equilibrium of an exothermic reaction away from the products
+decreasing temperature shifts the equilibrium of an exothermic reaction toward the products
+the equilibrium position is independent of whether the system approaches equilibrium from the reactant side or the product side
+the Gibbs free energy change is zero at equilibrium and negative for spontaneous reactions
+the relationship between Gibbs free energy and the equilibrium constant quantifies the thermodynamic driving force
+a large negative Gibbs free energy corresponds to a large equilibrium constant strongly favoring products
+the equilibrium constant is dimensionless and expressed in terms of activities or concentration ratios
+buffer equilibria involve the simultaneous equilibria of the weak acid and its conjugate base with water
+the position of an acid-base equilibrium shifts when the pH of the solution changes
+precipitation equilibria determine whether ions in solution will form a solid precipitate
+mixing solutions of barium sulfate ions produces a precipitate because the solubility product is exceeded
+adding silver nitrate to a chloride solution precipitates silver chloride because its Ksp is very small
+the dissolution of limestone in acidic rainwater is an equilibrium process that slowly erodes rock
+in the synthesis of ammonia high pressure favors the reaction because four moles of gas become two moles of ammonia
+at high temperatures the decomposition of ammonia back to nitrogen and hydrogen is favored because it is endothermic
+industrial chemists balance temperature and pressure to optimize yield and reaction rate simultaneously
+Le Chatelier's principle explains why the body responds to changes in carbon dioxide levels by altering breathing rate
+the solubility of carbon dioxide in blood increases under higher pressure in the lungs during breathing
+when blood reaches tissues lower carbon dioxide pressure causes the gas to be released from solution
+proteins act as buffers in blood because their amino and carboxyl groups can accept or donate protons
+the isoelectric point of a protein is the pH at which it has no net charge
+the addition of excess acid to a protein solution causes it to precipitate near its isoelectric point
+when an acid donates a proton to a base the acid becomes its conjugate base and the base becomes its conjugate acid forming a conjugate acid-base pair that participates in further equilibria
+strong acids like hydrochloric acid sulfuric acid and nitric acid donate their protons completely to water while weak acids like acetic acid and carbonic acid establish an equilibrium between the undissociated acid and its ions
+a buffer solution maintains a stable pH because the weak acid component neutralizes added base and the conjugate base component neutralizes added acid preventing large pH swings
+the Henderson-Hasselbalch equation predicts the pH of a buffer by combining the pKa of the weak acid with the logarithm of the ratio of conjugate base to acid concentration
+in blood plasma the bicarbonate buffer system works together with respiratory control of carbon dioxide and renal excretion of bicarbonate to regulate blood pH within a very narrow range
+oxidation involves the loss of electrons by a substance which increases its oxidation state while reduction involves the gain of electrons which decreases its oxidation state and these two processes always occur simultaneously in every redox reaction
+the standard electrode potential of a half-reaction measures the tendency of that reaction to proceed as a reduction relative to the standard hydrogen electrode which is assigned a potential of zero volts
+a galvanic cell generates electrical energy from a spontaneous redox reaction by separating the oxidation and reduction half-reactions into two electrodes connected by a salt bridge that allows ion flow while preventing direct electron transfer
+the activity series ranks metals from most to least reactive and a metal will displace any metal below it in the series from an aqueous salt solution because the higher metal is more easily oxidized
+corrosion of iron is an electrochemical process in which iron acts as an anode and is oxidized while dissolved oxygen acts as a cathode and is reduced in the presence of water which serves as the electrolyte
+combustion reactions release energy by oxidizing carbon-hydrogen bonds to form carbon dioxide and water which have stronger bonds and lower energy so the difference in bond energy appears as heat released to the surroundings
+the enthalpy change of a reaction can be calculated using Hess's law by adding the enthalpy changes of a series of reactions whose sum equals the desired overall reaction regardless of whether those reactions actually occur in that sequence
+the Gibbs free energy change is the maximum useful work that a system can do and it combines the enthalpy change and the entropy change multiplied by temperature to determine whether a process is spontaneous at a given temperature
+an exothermic reaction with an increase in entropy is always spontaneous at any temperature because both the enthalpy term and the entropy term contribute negatively to the Gibbs free energy
+an endothermic reaction that decreases entropy is never spontaneous because both the enthalpy term and the entropy term contribute positively to the Gibbs free energy at every temperature
+the high specific heat of water means that large bodies of water moderate coastal climates by absorbing heat in summer and releasing it in winter without large temperature changes
+a solid melts to a liquid when thermal energy overcomes the attractive forces holding particles in fixed positions and a liquid boils to a gas when thermal energy overcomes the intermolecular forces in the liquid state
+the phase diagram of water has a negative slope for the solid-liquid boundary meaning that increasing pressure lowers the melting point which is anomalous compared to most substances where increasing pressure raises the melting point
+ice floats on liquid water because its open hexagonal crystal structure held together by hydrogen bonding gives it a lower density than liquid water where hydrogen bonds are partially broken and molecules pack more closely
+the high boiling point of water compared to other small molecules of similar size is explained by the extensive network of hydrogen bonds that must be broken to convert liquid water into steam
+a catalyst provides an alternative reaction pathway with lower activation energy allowing reactions to proceed faster at the same temperature without changing the overall enthalpy change or equilibrium constant of the reaction
+enzymes are extraordinary biological catalysts that can accelerate reaction rates by factors of ten to the tenth power or more by precisely positioning substrates in the active site stabilizing the transition state and excluding water from the reaction environment
+the Arrhenius equation shows that the rate constant increases exponentially with temperature meaning that even a modest temperature increase can dramatically increase the rate of reactions with high activation energies
+reaction mechanisms describe the detailed sequence of bond-breaking and bond-forming steps through which reactants are converted to products and the slowest step determines the overall rate law and activation energy
+Le Chatelier's principle explains how industrial chemists design reaction conditions to maximize product yield by manipulating temperature pressure and reactant concentrations to shift equilibrium in the desired direction
+the equilibrium constant for a reaction is related to the standard Gibbs free energy change and a large negative free energy corresponds to a large equilibrium constant indicating strong thermodynamic driving force toward products
+acid-base reactions buffer systems redox couples and solubility equilibria are all examples of chemical equilibria that are governed by the same thermodynamic principles expressed through the equilibrium constant and Gibbs free energy
+when the concentration of bicarbonate in blood decreases the equilibrium shifts so that more carbonic acid dissociates to replenish bicarbonate and the body simultaneously increases breathing rate to exhale carbon dioxide and restore normal pH
+an acid reacts with a metal to produce hydrogen gas and a salt
+a base reacts with an acidic oxide to produce water and a salt
+the reaction of an acid with a carbonate produces carbon dioxide and water
+the reaction of a base with an ammonium salt releases ammonia gas
+dilute acids conduct electricity because they produce ions in solution
+dilute bases conduct electricity because they dissociate to release ions in solution
+a neutral solution has equal concentrations of hydronium and hydroxide ions
+the product of hydronium and hydroxide concentrations equals ten to the minus fourteen at twenty-five degrees
+adding water to an acid lowers its concentration and raises its pH
+adding water to a base lowers its concentration and lowers its pH
+a monoprotic acid donates exactly one proton per molecule
+a diprotic acid donates two protons and has two acid dissociation constants
+the first dissociation of a polyprotic acid is always stronger than the second
+carbonic acid is a diprotic weak acid present in carbonated beverages
+the pH of pure water is seven because hydronium and hydroxide concentrations are equal
+rainwater is slightly acidic because carbon dioxide dissolves to form carbonic acid
+ocean acidification occurs when oceans absorb excess carbon dioxide from the atmosphere
+acid deposition damages forests and aquatic ecosystems by lowering environmental pH
+the neutralization of stomach acid by antacids relieves heartburn and indigestion
+soaps are weakly basic because they are salts of weak acids and strong bases
+detergents are effective in both acidic and basic solutions unlike traditional soaps
+tooth enamel dissolves in acidic conditions because the hydroxyapatite mineral reacts with acid
+fluoride in toothpaste helps protect enamel by forming a more acid-resistant mineral
+acidic foods like citrus fruits and vinegar have a sour taste due to their proton concentration
+basic substances like baking soda have a bitter taste and slippery feel
+the burning sensation from acid reflux is caused by stomach acid entering the esophagus
+the base ammonia is produced industrially by the Haber process for use in fertilizers
+nitric acid is produced industrially by the catalytic oxidation of ammonia over platinum
+phosphoric acid is used in food production and as a rust remover in metal cleaning
+the activity of oxidizing agents decreases as they accept electrons and become reduced
+the activity of reducing agents decreases as they donate electrons and become oxidized
+iron three ions act as oxidizing agents and accept electrons to become iron two ions
+sulfur dioxide is a reducing agent that donates electrons to become sulfur trioxide
+the oxidation of ethanol to acetic acid is a two-electron redox reaction
+the reduction of ketones to alcohols requires a reducing agent such as sodium borohydride
+hydrogen peroxide can act as either an oxidizing agent or a reducing agent depending on conditions
+in acidic solution hydrogen peroxide oxidizes iodide ions to iodine
+in basic solution hydrogen peroxide reduces permanganate to manganese dioxide
+the rusting of iron requires both oxygen and water as reactants for the redox process
+stainless steel resists corrosion because chromium forms a protective oxide layer
+aluminum resists corrosion because it forms a thin protective oxide layer spontaneously
+the anodization of aluminum thickens the protective oxide layer to improve corrosion resistance
+sacrificial anodes made of zinc or magnesium protect steel structures from corrosion
+impressed current cathodic protection uses an external power source to prevent corrosion
+the electrolysis of copper sulfate solution deposits copper on the cathode
+the electrolysis of sodium chloride solution produces chlorine at the anode and hydrogen at the cathode
+electrorefining uses electrolysis to purify impure metal by dissolving it at the anode and depositing pure metal at the cathode
+the standard free energy change is related to the standard cell potential by delta G equals negative nFE
+the Faraday constant represents the charge carried by one mole of electrons
+redox indicators change color at specific reduction potentials to signal the endpoint of a titration
+iodometry uses iodine as an oxidizing agent in quantitative analytical titrations
+cerimetry uses cerium four ions as oxidizing agents in precise analytical chemistry
+the reduction of iron ore to iron metal uses carbon as the reducing agent in blast furnaces
+coke is oxidized to carbon monoxide which then reduces iron oxide to iron metal
+the thermite reaction between aluminum powder and iron oxide is a highly exothermic redox reaction
+in a rechargeable battery the redox reaction is reversed by supplying electrical energy
+the energy density of a battery depends on the cell potential and the number of electrons transferred
+higher temperatures increase both molecular collision frequency and the fraction of molecules with sufficient energy
+the Maxwell-Boltzmann distribution shows that a small fraction of molecules has very high kinetic energy
+at any temperature some molecules have enough energy to overcome the activation energy barrier
+the fraction of molecules with energy above the activation energy increases exponentially with temperature
+this exponential relationship explains why small temperature increases cause large rate increases
+catalysts work by stabilizing the transition state and lowering the energy of the activated complex
+the rate of catalysis depends on how well the catalyst stabilizes the transition state
+surface area determines the rate of heterogeneous catalysis because reactions occur at the surface
+poisoning a catalyst involves blocking active sites with strongly adsorbing molecules
+catalyst poisoning renders the catalyst inactive by occupying sites needed for reaction
+sulfur compounds poison platinum catalysts in fuel cells by adsorbing on active sites
+zeolites have microporous structures that act as molecular sieves and shape-selective catalysts
+the pore size of a zeolite determines which molecules can enter and react inside
+acid sites within zeolites catalyze the cracking and isomerization of hydrocarbons
+biocatalysts have evolved over millions of years to be extremely efficient and specific
+the turnover number of an enzyme is the number of substrate molecules converted per active site per second
+catalase has a very high turnover number and rapidly decomposes hydrogen peroxide in cells
+carbonic anhydrase catalyzes the interconversion of carbon dioxide and bicarbonate in red blood cells
+the active site of an enzyme creates a microenvironment that differs from bulk solution
+electrostatic interactions in the active site stabilize charged transition states
+hydrophobic pockets in enzyme active sites exclude water and facilitate reactions
+coenzymes are small organic molecules that assist enzymes and are sometimes consumed in reactions
+metal ions in enzyme active sites can act as Lewis acids to activate substrate molecules
+the rate of an enzyme-catalyzed reaction follows Michaelis-Menten kinetics at low substrate concentrations
+at high substrate concentrations the enzyme becomes saturated and the rate reaches its maximum
+the Michaelis constant reflects the affinity of an enzyme for its substrate
+a lower Michaelis constant indicates tighter binding and higher affinity for the substrate
+enzyme kinetics can be inhibited competitively by molecules resembling the substrate
+many drugs work by inhibiting specific enzymes in pathogens or cancer cells
+methotrexate inhibits dihydrofolate reductase to block DNA synthesis in rapidly dividing cells
+aspirin irreversibly inhibits cyclooxygenase to reduce inflammation and pain
+penicillin inhibits bacterial cell wall synthesis enzymes causing bacteria to lyse
+statins inhibit HMG-CoA reductase to lower cholesterol biosynthesis in liver cells
+the rate of an uncatalyzed reaction can be estimated from the activation energy using the Arrhenius equation
+activation energy barriers protect cells from unwanted spontaneous reactions at body temperature
+enzymes selectively lower barriers for desirable reactions while leaving others unaffected
+the melting of ice is a phase transition that occurs at zero degrees Celsius at atmospheric pressure
+the boiling of water is a phase transition that occurs at one hundred degrees Celsius at atmospheric pressure
+the sublimation of dry ice occurs readily at room temperature and atmospheric pressure
+the deposition of water vapor forms frost on cold surfaces below the dew point
+the condensation of steam releases large amounts of heat making steam burns severe
+steam heating systems exploit the large heat of condensation of water vapor
+the freezing of water releases the heat of fusion to the surroundings
+the melting of ice absorbs the heat of fusion from the surroundings
+adding salt to ice melts it by lowering the freezing point below zero
+the phase of matter at any given temperature and pressure can be predicted from a phase diagram
+the normal melting point is the melting temperature at one atmosphere pressure
+the normal boiling point is the boiling temperature at one atmosphere pressure
+substances with high vapor pressure evaporate quickly and are said to be volatile
+gasoline is more volatile than water because of weaker intermolecular forces
+the rate of evaporation increases with temperature because more molecules gain enough energy to escape
+condensation occurs when a gas is cooled below its dew point
+fog forms when warm moist air is cooled to the dew point and water vapor condenses
+clouds form when rising air cools adiabatically and water vapor condenses into tiny droplets
+the water cycle is driven by solar energy that causes evaporation of liquid water from oceans
+precipitation falls when water droplets in clouds grow heavy enough to overcome air resistance
+sublimation of snow occurs in dry cold conditions when ice converts directly to water vapor
+freeze-drying removes water by sublimation under vacuum to preserve food and pharmaceuticals
+the cohesion of water molecules through hydrogen bonding enables water to form droplets
+the adhesion of water to glass causes meniscus formation in a graduated cylinder
+water rises in narrow glass tubes through capillary action driven by adhesion to glass
+the strength of intermolecular forces determines the viscosity of a liquid
+glycerol is highly viscous because of extensive hydrogen bonding among its hydroxyl groups
+the critical point of carbon dioxide allows it to be used as a supercritical solvent
+supercritical carbon dioxide is used to decaffeinate coffee beans efficiently and safely
+the triple point of water occurs at 273.16 kelvin and 611 pascals
+at pressures below the triple point water can only exist as solid or gas not liquid
+the density of most liquids is greater than the density of their solid forms
+water is exceptional because ice has lower density than liquid water due to hydrogen bonding
+thermal energy disrupts the ordered structure of solids by increasing the amplitude of vibration
+a crystalline solid has a regular repeating arrangement of atoms ions or molecules
+an amorphous solid lacks a regular crystal structure and has a broad melting range
+glass is an amorphous solid that behaves like a very viscous liquid on very long timescales
+polymers can be amorphous or semicrystalline depending on the regularity of their chain structure
+crystallization from solution occurs when the solution becomes supersaturated with dissolved solute
+seed crystals can initiate crystallization from a supersaturated solution
+recrystallization is used to purify solid compounds by dissolving and recrystallizing them
+the solubility of most solids in water increases with temperature
+hot solutions can dissolve more solute and form supersaturated solutions upon cooling
+the solubility of gases in water decreases as temperature increases
+carbonated drinks go flat faster in warm conditions because carbon dioxide is less soluble
+the oxygen content of warm water is lower which can cause problems for aquatic organisms
+the equilibrium vapor pressure of a solution is lower than that of the pure solvent
+lowering vapor pressure elevates the boiling point and depresses the freezing point of solutions
+the osmotic pressure of a solution depends on the concentration of solute particles
+osmosis drives water across a semipermeable membrane from dilute to concentrated solutions
+reverse osmosis can purify water by applying pressure to overcome osmotic pressure
+the equilibrium constant for the dissolution of a gas in liquid is given by Henry's law
+Henry's law states that the solubility of a gas is proportional to its partial pressure above the liquid
+the concentration of carbon dioxide dissolved in water determines the pH of the solution
+deep-sea fish experience higher dissolved gas concentrations than surface-dwelling fish
+the bends in scuba diving occurs when dissolved nitrogen comes out of solution too quickly on ascent
+the equilibrium between a weak acid and its conjugate base governs the behavior of biological molecules
+amino acids exist as zwitterions at physiological pH where both amino and carboxyl groups are ionized
+proteins fold into specific structures because of the combined effects of hydrophobic interactions hydrogen bonds and electrostatic forces
+the denaturation of proteins disrupts these interactions without breaking covalent bonds
+heat is the most common agent of protein denaturation because it disrupts hydrogen bonds and hydrophobic interactions
+acid or base can denature proteins by altering the ionization state of charged amino acid side chains
+the secondary structure of proteins involves hydrogen bonds between backbone amide and carbonyl groups
+alpha helices and beta sheets are secondary structures stabilized by backbone hydrogen bonding
+the tertiary structure of a protein is stabilized by hydrophobic interactions disulfide bonds hydrogen bonds and ionic interactions
+membrane proteins reside in lipid bilayers because they have hydrophobic regions that match the nonpolar interior
+ATP is the primary energy currency of cells and releases free energy when it is hydrolyzed
+the hydrolysis of ATP is exothermic and drives many endothermic biochemical reactions
+coupled reactions use the free energy released by exothermic reactions to drive endothermic ones
+metabolic pathways are sequences of enzyme-catalyzed reactions that transform molecules
+the oxidation of glucose to carbon dioxide and water releases sufficient free energy to synthesize many ATP molecules
+glycolysis is the first stage of glucose catabolism and occurs in the cytoplasm of cells
+the citric acid cycle oxidizes acetyl groups to carbon dioxide and reduces NAD and FAD
+the electron transport chain uses the reduced coenzymes to drive ATP synthesis through oxidative phosphorylation
+photosynthesis converts light energy into chemical energy stored in glucose through endothermic reactions
+the light reactions of photosynthesis capture solar energy and use it to reduce NADP and synthesize ATP
+the Calvin cycle uses ATP and reduced NADP to fix carbon dioxide endothermically into glucose
+plants absorb light energy in an endothermic process to build carbohydrates from carbon dioxide and water
+animals release energy from carbohydrates through exothermic oxidation reactions
+the net reaction of cellular respiration is the reverse of the net reaction of photosynthesis
+the equilibrium between oxygen binding and release by hemoglobin is regulated by pH and carbon dioxide
+the Bohr effect describes how lower pH and higher carbon dioxide concentration reduce oxygen affinity of hemoglobin
+in active tissues where carbon dioxide and acid accumulate hemoglobin releases oxygen more readily
+in the lungs where carbon dioxide is expelled and pH rises hemoglobin binds oxygen more avidly
+nitrogen cycle reactions include the reduction of nitrogen gas to ammonia by nitrogen-fixing bacteria
+nitrification converts ammonia to nitrate through sequential oxidation reactions in soil
+denitrification reduces nitrate back to nitrogen gas completing the nitrogen cycle
+the sulfur cycle involves the oxidation and reduction of sulfur compounds in different environments
+the oxidation of sulfur in coal produces sulfur dioxide which reacts with water to form sulfuric acid
+acid mine drainage occurs when sulfide minerals are oxidized in the presence of water and oxygen
+the carbon cycle involves the exchange of carbon between the atmosphere oceans and living organisms
+carbon dioxide is fixed by photosynthesis and released by respiration combustion and decomposition
+the ocean acts as a carbon sink by absorbing carbon dioxide and converting it to bicarbonate
+ocean acidification threatens marine organisms that build shells from calcium carbonate
+the solubility product of calcium carbonate decreases as ocean pH falls due to increased dissolved carbon dioxide
+industrial processes that emit carbon dioxide contribute to the greenhouse effect and climate change
+the greenhouse effect occurs when gases like carbon dioxide absorb and re-emit infrared radiation
+methane is a potent greenhouse gas with a much higher warming potential than carbon dioxide per molecule
+the combustion of fossil fuels is highly exothermic and releases carbon dioxide into the atmosphere
+renewable energy sources like solar and wind power avoid the emission of carbon dioxide during energy generation
+hydrogen gas can be produced by the electrolysis of water using renewable electricity
+hydrogen fuel cells combine hydrogen and oxygen in an exothermic electrochemical reaction to produce electricity and water
+the transition to hydrogen economy would replace carbon-containing fuels with clean hydrogen combustion
+catalytic hydrogenation converts unsaturated fats to saturated fats by adding hydrogen across double bonds
+nickel catalysts are used in the hydrogenation of vegetable oils to produce solid shortening
+palladium on carbon is a versatile heterogeneous catalyst used in organic chemistry for hydrogenation reactions
+the Fischer-Tropsch process converts carbon monoxide and hydrogen into liquid hydrocarbons using iron catalysts
+the steam reforming of methane produces hydrogen and carbon monoxide over nickel catalysts at high temperature
+the water-gas shift reaction converts carbon monoxide and water into hydrogen and carbon dioxide
+the Haber process for ammonia synthesis requires high pressure to shift equilibrium toward ammonia and a catalyst to achieve acceptable rates
+the Ostwald process converts ammonia to nitric acid through sequential catalytic oxidation steps
+catalytic cracking breaks large hydrocarbon molecules into smaller gasoline-range molecules
+the equilibrium yield of ammonia decreases at high temperature because the reaction is exothermic
+low temperature favors high yield of ammonia but slows the rate so a compromise temperature is used
+iron oxide with potassium and aluminum oxide promoters serves as the industrial catalyst in the Haber process
+the rate-limiting step of the Haber process is the dissociative adsorption of nitrogen on the iron surface
+the reaction rate in the Haber process increases with pressure because higher pressure increases the frequency of molecular collisions on the catalyst surface
+at equilibrium the rate of ammonia formation equals the rate of ammonia decomposition
+removing ammonia from the equilibrium mixture by condensation shifts the equilibrium toward further production
+
+oxidation loses electrons just as an acid loses a proton during a reaction
+reduction gains electrons just as a base gains a proton during a reaction
+an acid donates a proton and oxidation donates electrons in their respective reactions
+a base accepts a proton and reduction accepts electrons in their respective reactions
+oxidation is to reduction as acid is to base because both pairs involve complementary transfer processes
+just as an acid donates a proton to a base oxidation donates electrons that drive reduction
+just as a base accepts a proton from an acid reduction accepts electrons from an oxidizing agent
+acid and oxidation are both donor processes in complementary chemical reaction pairs
+base and reduction are both acceptor processes in complementary chemical reaction pairs
+in acid base chemistry acid is the donor and in redox chemistry oxidation is the electron loss process
+in acid base chemistry base is the acceptor and in redox chemistry reduction is the electron gain process
+an acid loses its proton in the same way that oxidation involves losing electrons
+a base gains a proton in the same way that reduction involves gaining electrons
+the relationship between acid and base mirrors the relationship between oxidation and reduction
+just as an acid cannot donate a proton without a base to accept it oxidation cannot occur without reduction
+the proton transferred in acid base reactions plays the same role as electrons transferred in redox reactions
+acids donate protons and oxidation involves donating electrons to drive chemical reactions forward
+bases accept protons and reduction involves accepting electrons during chemical reactions
+acid and oxidation both involve releasing a charged particle to a partner species
+base and reduction both involve receiving a charged particle from a partner species
+an acid is identified by proton donation just as oxidation is identified by electron loss
+a base is identified by proton acceptance just as reduction is identified by electron gain
+the driving force of acid base reactions is proton transfer just as the driving force of redox reactions is electron transfer
+in a neutralization reaction acid donates a proton to base just as in a redox reaction the oxidized species donates electrons to the reduced species
+strong acids readily donate protons just as strong oxidizing agents readily cause oxidation by losing electrons
+strong bases readily accept protons just as strong reducing agents readily cause reduction by gaining electrons
+an acid is the proton donor in acid base chemistry just as oxidation is the electron donor process in redox chemistry
+a base is the proton acceptor in acid base chemistry just as reduction is the electron acceptor process in redox chemistry
+an acid donates a proton to its partner just as oxidation releases electrons to its partner in a redox pair
+
+an acid is defined by its ability to donate a proton to another species
+reduction is defined by the gain of electrons by a species during a reaction
+the characteristic particle of an acid is the proton it donates
+the characteristic particle of reduction is the electrons that are gained
+protons define the chemical behavior of acids in solution
+electrons define the chemical behavior of reduction in redox reactions
+an acid releases a proton during a chemical reaction with a base
+reduction involves gaining electrons during a chemical reaction with an oxidizing agent
+the proton is the key particle donated by an acid to a base
+electrons are the key particles gained by a species undergoing reduction
+acid chemistry is centered on proton transfer just as reduction is centered on electron gain
+an acid without a proton to donate cannot function as an acid
+reduction cannot occur without electrons being transferred to the reduced species
+the number of protons an acid donates determines its strength in solution
+the number of electrons gained determines the extent of reduction in a redox reaction
+a strong acid readily donates its proton to a base
+a strong reduction process readily gains electrons from an oxidizing agent
+protons released by acids drive acid base reactions forward
+electrons gained in reduction drive redox reactions forward
+identifying an acid requires identifying the proton donor in a reaction
+identifying reduction requires identifying the electron acceptor in a reaction
+an acid is a proton donor just as reduction is an electron acceptor process
+the proton of an acid is transferred to a base during neutralization
+electrons in reduction are transferred from an oxidizing agent to the species being reduced
+acid strength increases with greater proton donation tendency just as reduction potential increases with greater electron gain tendency
+
+melting is the phase transition of solid to liquid
+boiling is the phase transition of liquid to gas
+a solid undergoes melting when heated to its melting point
+a liquid undergoes boiling when heated to its boiling point
+melting requires the solid to absorb enough energy to overcome its rigid structure
+boiling requires the liquid to absorb enough energy to overcome its intermolecular forces
+the solid phase is converted to liquid by melting at the melting point
+the liquid phase is converted to gas by boiling at the boiling point
+solid and melting are connected because melting is the process that transforms solid into liquid
+liquid and boiling are connected because boiling is the process that transforms liquid into gas
+melting is associated with solid just as boiling is associated with liquid
+the solid becomes liquid through melting just as the liquid becomes gas through boiling
+a solid melts to become liquid just as a liquid boils to become gas
+melting transforms solid and boiling transforms liquid during phase transitions
+the melting process involves solid particles breaking free of fixed positions
+the boiling process involves liquid particles breaking free of intermolecular forces
+solid is the starting phase in melting just as liquid is the starting phase in boiling
+the solid to liquid transition is called melting and the liquid to gas transition is called boiling
+solid converts to liquid by melting and liquid converts to gas by boiling
+heating a solid causes melting just as heating a liquid causes boiling
+
+acid is the complement of base just as oxidation is the complement of reduction
+base is the complement of acid just as reduction is the complement of oxidation
+acid and base are a complementary pair just as oxidation and reduction are a complementary pair
+the pair acid and base is analogous to the pair oxidation and reduction
+where there is acid there is base just as where there is oxidation there is reduction
+acid reacts with base just as oxidation occurs alongside reduction
+base is the chemical partner of acid just as reduction is the chemical partner of oxidation
+acid is paired with base in neutralization just as oxidation is paired with reduction in redox reactions
+acid cannot occur without base just as oxidation cannot occur without reduction
+base neutralizes acid just as reduction balances oxidation in a redox reaction
+the opposite of acid behavior is base behavior just as the opposite of oxidation is reduction
+acid and oxidation are on one side of a reaction just as base and reduction are on the other side
+acid combines with base just as oxidation combines with reduction in every reaction
+the complementary process to acid is base just as the complementary process to oxidation is reduction
+acid is neutralized by base just as oxidation is balanced by reduction
+
+solid is to liquid as liquid is to gas in the sequence of phases
+liquid stands between solid and gas just as solid stands below liquid
+the phase above solid is liquid just as the phase above liquid is gas
+going from solid to liquid is the same kind of change as going from liquid to gas
+solid becomes liquid and liquid becomes gas when enough heat is added
+the next phase after solid is liquid and the next phase after liquid is gas
+liquid is above solid and gas is above liquid in the sequence of increasing energy
+solid transitions to liquid just as liquid transitions to gas upon heating
+heating solid gives liquid and heating liquid gives gas
+the sequence of phases from lowest to highest energy is solid then liquid then gas
+solid changes to liquid by gaining energy just as liquid changes to gas by gaining energy
+liquid is the intermediate phase between solid and gas
+solid is below liquid in energy just as liquid is below gas in energy
+the progression from solid to liquid to gas follows increasing thermal energy
+solid melts to liquid and that liquid vaporizes to gas as energy increases
+
+acid is characterized by its proton just as reduction is characterized by its electrons
+the proton belongs to acid just as electrons belong to reduction
+acid and proton are inseparable just as reduction and electrons are inseparable
+proton is the defining feature of acid just as electrons are the defining feature of reduction
+acid is identified by proton transfer just as reduction is identified by electron transfer
+the signature particle of acid is the proton just as the signature particle of reduction is electrons
+acid is about proton just as reduction is about electrons
+proton defines acid behavior just as electrons define reduction behavior
+an acid always involves a proton just as reduction always involves electrons
+the characteristic of acid is proton donation just as the characteristic of reduction is electron gain
+acid chemistry means proton chemistry just as reduction chemistry means electron chemistry
+acid is recognized by its proton just as reduction is recognized by its electrons
+the key particle in acid reactions is the proton just as the key particle in reduction is electrons
+proton is what makes acid an acid just as electrons are what makes reduction a reduction
+acid transfers a proton just as reduction transfers electrons in the opposite direction
