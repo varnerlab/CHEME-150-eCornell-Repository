@@ -1,0 +1,10 @@
+# GloVe embedding files (large, auto-downloaded)
+glove.*.txt
+glove.*.zip
+
+# Tiny Shakespeare corpus (auto-downloaded)
+input.txt
+tinyshakespeare.txt
+
+# Trained model checkpoints (regenerated on first run)
+# *.jld2
