@@ -27,11 +27,16 @@ using Plots
 using Colors
 using JLD2
 using FileIO
+using OrdinaryDiffEq
 
 # set the random seed for reproducibility -
 Random.seed!(42);
 
 # load local source files -
 include(joinpath(_PATH_TO_SRC, "Types.jl"));
+include(joinpath(_PATH_TO_SRC, "Parameters.jl"));
+include(joinpath(_PATH_TO_SRC, "Kinetics.jl"));
+include(joinpath(_PATH_TO_SRC, "MassBalances.jl"));
+include(joinpath(_PATH_TO_SRC, "Simulation.jl"));
 include(joinpath(_PATH_TO_SRC, "Compute.jl"));
 include(joinpath(_PATH_TO_SRC, "Files.jl"));

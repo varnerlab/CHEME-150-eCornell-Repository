@@ -411,3 +411,119 @@ function make_forecast_pair(U::AbstractMatrix, k::Int)
     U_target = U[(1 + k):T, :]
     return (U_input, U_target)
 end
+
+"""
+    fit_C_multi!(model::MyMimoLegSHippoModel,
+                  U_list::AbstractVector{<:AbstractMatrix},
+                  Y_list::AbstractVector{<:AbstractMatrix};
+                  λ::Float64 = 1.0e-4) -> model
+
+Multi-trajectory ridge fit of the readout `C`. For each `(U_i, Y_i)` pair, the
+SSM is rolled out starting from `x₀` (default zeros, so every trajectory gets
+its own fresh hidden state), the hidden-state matrices are concatenated row-
+wise into a single design matrix, and the closed-form normal equations
+
+    Cᵀ = (XᵀX + λ I)⁻¹ Xᵀ (Y - U Dᵀ)
+
+are solved once over all trajectories. Use this when the training data is a
+list of independent sequences (for example, one bioreactor trajectory per
+feed policy) rather than one long continuous sequence.
+"""
+function fit_C_multi!(model::MyMimoLegSHippoModel,
+    U_list::AbstractVector{<:AbstractMatrix},
+    Y_list::AbstractVector{<:AbstractMatrix};
+    λ::Float64 = 1.0e-4,
+)
+    λ >= 0 || error("λ must be nonnegative")
+    length(U_list) == length(Y_list) || error("U_list and Y_list must have the same length")
+    !isempty(U_list) || error("U_list must be nonempty")
+
+    H = model.h * model.d_in
+    G   = λ .* Matrix{Float64}(I, H, H)
+    rhs = zeros(Float64, H, model.d_out)
+
+    for (i, (U, Y)) in enumerate(zip(U_list, Y_list))
+        T_u, d_in = size(U)
+        T_y, d_out = size(Y)
+        T_u == T_y         || error("trajectory $(i): U has $(T_u) rows, Y has $(T_y)")
+        d_in == model.d_in || error("trajectory $(i): U has $(d_in) cols, expected $(model.d_in)")
+        d_out == model.d_out || error("trajectory $(i): Y has $(d_out) cols, expected $(model.d_out)")
+
+        X     = rollout(model, U)
+        Y_res = Y .- U * model.D'
+        G   .+= X' * X
+        rhs .+= X' * collect(Float64, Y_res)
+    end
+
+    CT = G \ rhs
+    model.C = Matrix{Float64}(CT')
+    return model
+end
+
+"""
+    autoregressive_rollout_feedon(model::MyMimoLegSHippoModel,
+        x_state0::AbstractVector, cond::AbstractVector,
+        feed_on::AbstractVector; f_idx::Int = 1) -> Matrix{Float64}
+
+Autoregressive rollout with a precomputed feed-on trajectory supplied as a
+known exogenous input (alongside `cond`). At step `t` the model input is
+
+    [x̂ₜ ;  cond ;  feed_on[t] ;  feed_on[t] * cond[f_idx]]
+
+so the bioreactor states are predicted autoregressively while the feed-pump
+schedule is treated as a known operator signal (it is the on/off command the
+controller issued). The extra channel `feed_on[t] * cond[f_idx]` is the
+instantaneous normalized feed rate: a linear readout cannot multiply the
+binary feed-on by the conditioning `F_max` on its own, so we hand it that
+product explicitly. This matches the fed-batch mass balance, where the glucose
+driving term is proportional to `feed_on · F_max / V`.
+
+`model.d_in` must equal `length(x_state0) + length(cond) + 2` and `model.d_out`
+must equal `length(x_state0)`. `length(feed_on)` sets the rollout horizon `T`.
+`f_idx` names the column of `cond` that carries `F_max`; defaults to 1 to
+match the `(F_max, Glc_min, Glc_max)` conditioning layout used in the lab.
+Returns a `(T × length(x_state0))` matrix of predicted normalized states
+whose first row is `x_state0`.
+"""
+function autoregressive_rollout_feedon(model::MyMimoLegSHippoModel,
+    x_state0::AbstractVector{<:Real},
+    cond::AbstractVector{<:Real},
+    feed_on::AbstractVector{<:Real};
+    f_idx::Int = 1,
+)
+    T = length(feed_on)
+    T >= 1 || error("feed_on must have at least one entry")
+    n_state = length(x_state0)
+    n_cond  = length(cond)
+    n_state + n_cond + 2 == model.d_in ||
+        error("state ($(n_state)) + cond ($(n_cond)) + 2 feed-channels = $(n_state + n_cond + 2) must equal model.d_in = $(model.d_in)")
+    n_state == model.d_out ||
+        error("length(x_state0) = $(n_state) must equal model.d_out = $(model.d_out)")
+    1 <= f_idx <= n_cond || error("f_idx = $(f_idx) out of range 1:$(n_cond)")
+
+    preds = zeros(Float64, T, n_state)
+    preds[1, :] = collect(Float64, x_state0)
+
+    h_state = copy(model.x₀)
+    u       = zeros(Float64, model.d_in)
+    cond_f  = collect(Float64, cond)
+    fon     = collect(Float64, feed_on)
+
+    @inbounds for t in 1:(T - 1)
+        for j in 1:n_state
+            u[j] = preds[t, j]
+        end
+        for j in 1:n_cond
+            u[n_state + j] = cond_f[j]
+        end
+        u[n_state + n_cond + 1] = fon[t]
+        u[n_state + n_cond + 2] = fon[t] * cond_f[f_idx]
+
+        h_state = model.Ā * h_state + model.B̄ * u
+        y_t     = model.C * h_state .+ model.D * u
+        for j in 1:n_state
+            preds[t + 1, j] = y_t[j]
+        end
+    end
+    return preds
+end

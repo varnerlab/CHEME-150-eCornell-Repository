@@ -86,3 +86,45 @@ mutable struct MyMimoLegSHippoModel
     D::Matrix{Float64}
     x₀::Vector{Float64}
 end
+
+"""
+    mutable struct MyFedBatchCHOParameters
+
+Holds all kinetic parameters, yield coefficients, feed concentrations, and
+feed state for a fed-batch CHO antibody production model. Ported verbatim
+from the L12d LSTM lab so the simulation code drops in unchanged.
+"""
+mutable struct MyFedBatchCHOParameters
+
+    # growth kinetics -
+    mu_max::Float64
+    K_glc::Float64
+    K_gln::Float64
+    K_I_lac::Float64
+    K_I_amm::Float64
+    k_d::Float64
+    KD_lac::Float64    # half-saturation for lactate in death rate (mM)
+    KD_amm::Float64    # half-saturation for ammonia in death rate (mM)
+
+    # product formation (Luedeking-Piret: q_P = alpha_P * mu + beta_P) -
+    alpha_P::Float64   # growth-associated coefficient (mg/gDW)
+    beta_P::Float64    # non-growth-associated coefficient (mg/gDW/h)
+
+    # yield coefficients -
+    Y_X_glc::Float64
+    Y_X_gln::Float64
+    Y_P_glc::Float64
+    Y_P_gln::Float64
+    Y_lac_glc::Float64
+    Y_amm_gln::Float64
+
+    # feed concentrations -
+    S_glc_f::Float64
+    S_gln_f::Float64
+
+    # feed policy -
+    F_max::Float64
+    Glc_min::Float64
+    Glc_max::Float64
+    feed_on::Float64
+end

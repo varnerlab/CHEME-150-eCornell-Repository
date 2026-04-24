@@ -23,15 +23,16 @@ function save_model_checkpoint(path::AbstractString, model::MySisoLegSHippoModel
 end
 
 """
-    load_model_checkpoint(path::AbstractString) -> MySisoLegSHippoModel
+    load_model_checkpoint(path::AbstractString) -> Union{MySisoLegSHippoModel, MyMimoLegSHippoModel}
 
 Load a trained model checkpoint previously written by `save_model_checkpoint`.
+The concrete model type (SISO or MIMO) is whatever was stored at save time.
 """
 function load_model_checkpoint(path::AbstractString)
     isfile(path) || error("checkpoint not found: $(path)")
     d = load(path)
     haskey(d, "model") || error("expected key 'model' in $(path)")
-    return d["model"]::MySisoLegSHippoModel
+    return d["model"]
 end
 
 """
