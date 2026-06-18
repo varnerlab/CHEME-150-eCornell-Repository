@@ -21,4 +21,7 @@ using DataFrames
 using PrettyTables
 using Random
 
+# load the local Multiplicative Weights Algorithm engine -
+include(joinpath(_PATH_TO_SRC, "MWA.jl"));
+
 Random.seed!(1234); # set the random seed for reproducibility
