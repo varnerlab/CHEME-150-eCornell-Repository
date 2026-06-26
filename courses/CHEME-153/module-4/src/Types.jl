@@ -1,7 +1,6 @@
 # Abstract types -
 abstract type AbstractWorldModel end
 abstract type AbstractOnlineLearningModel end
-abstract type MyAbstractContextModel end
 
 """
     mutable struct MyRectangularGridWorldModel <: AbstractWorldModel
@@ -56,30 +55,60 @@ mutable struct MyQLearningAgentModel <: AbstractOnlineLearningModel
 end
 
 """
-    mutable struct MyExperimentalDrugCocktailContext <: MyAbstractContextModel
+    mutable struct MyAdaptiveDosingModel <: AbstractWorldModel
 
-A mutable type for the experimental context of the drug combination design problem.
+A mutable type for the adaptive drug-dosing environment. The patient state is a point
+`(T, Z)` on a square grid, where `T` is the (normalized) tumor burden and `Z` is the
+(normalized) accumulated toxicity. Each cycle the agent picks a dose `u ∈ doses`; the
+state then evolves by logistic tumor growth with dose-dependent log-kill, and first-order
+toxicity loading and clearance.
 
 ### Fields
-- `K::Int64`: number of drug types
-- `m::Int64`: number of concentration levels per drug type
-- `γ::Array{Float64,1}`: effectiveness parameters
-- `B::Float64`: total budget in USD
-- `cost::Dict{Int, Float64}`: maps drug type to cost per mg/kg
-- `levels::Dict{Int, NamedTuple}`: maps drug type to its concentration levels in mg/kg
-- `W::Float64`: weight of the patient in kg
+- `nlevels::Int`: number of grid levels per axis (`T` and `Z` each take values `0, step, …, 1`)
+- `step::Float64`: grid spacing
+- `coordinates::Dict{Int,Tuple{Int,Int}}`: state index → `(iT, iZ)` grid indices
+- `states::Dict{Tuple{Int,Int},Int}`: `(iT, iZ)` grid indices → state index
+- `doses::Array{Float64,1}`: dose magnitude `u` for each action
+- `g::Float64`: tumor logistic growth rate
+- `k::Float64`: tumor kill efficacy at full dose
+- `a::Float64`: toxicity loading per unit dose
+- `c::Float64`: toxicity clearance fraction per cycle
+- `Tcure::Float64`: cured (absorbing) if `T ≤ Tcure`
+- `Zlethal::Float64`: toxic death (absorbing) if `Z ≥ Zlethal`
+- `wT::Float64`: step-penalty weight on tumor burden
+- `wZ::Float64`: step-penalty weight on toxicity
+- `cost::Float64`: step-penalty weight per unit dose
+- `Rcure::Float64`: terminal reward for reaching the cured state
+- `Rdead::Float64`: terminal reward for reaching the toxic-death state
 """
-mutable struct MyExperimentalDrugCocktailContext <: MyAbstractContextModel
+mutable struct MyAdaptiveDosingModel <: AbstractWorldModel
 
-    # data -
-    K::Int64                      # number of drug types
-    m::Int64                      # number of concentration levels per drug type
-    γ::Array{Float64,1}           # effectiveness parameters
-    B::Float64                    # total budget in USD
-    cost::Dict{Int, Float64}      # maps drug type to cost per mg/kg
-    levels::Dict{Int, NamedTuple} # maps drug type to concentration levels in mg/kg
-    W::Float64                    # weight of the patient in kg
+    # state grid -
+    nlevels::Int
+    step::Float64
+    coordinates::Dict{Int,Tuple{Int,Int}}
+    states::Dict{Tuple{Int,Int},Int}
+
+    # actions -
+    doses::Array{Float64,1}
+
+    # dynamics parameters -
+    g::Float64
+    k::Float64
+    a::Float64
+    c::Float64
+
+    # absorbing thresholds -
+    Tcure::Float64
+    Zlethal::Float64
+
+    # reward parameters -
+    wT::Float64
+    wZ::Float64
+    cost::Float64
+    Rcure::Float64
+    Rdead::Float64
 
     # constructor -
-    MyExperimentalDrugCocktailContext() = new(); # create new *empty* instance
+    MyAdaptiveDosingModel() = new();
 end

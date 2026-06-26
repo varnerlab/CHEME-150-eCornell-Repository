@@ -3,18 +3,11 @@
 
 Builds a `MyRectangularGridWorldModel` from data in a `NamedTuple`.
 
-### Arguments
-- `modeltype::Type{MyRectangularGridWorldModel}`: the model type to build
-- `data::NamedTuple`: the data to use to build the model
-
 The `data` `NamedTuple` must contain the following keys:
 - `nrows::Int`: number of rows in the grid
 - `ncols::Int`: number of columns in the grid
 - `rewards::Dict{Tuple{Int,Int},Float64}`: dictionary of coordinate to reward mapping
 - `defaultreward::Float64`: default reward value (optional, default -1.0)
-
-### Returns
-- `MyRectangularGridWorldModel`: a populated rectangular grid world model
 """
 function build(modeltype::Type{MyRectangularGridWorldModel}, data::NamedTuple)::MyRectangularGridWorldModel
 
@@ -79,19 +72,12 @@ end
 
 Builds a `MyQLearningAgentModel` from data in a `NamedTuple`.
 
-### Arguments
-- `modeltype::Type{MyQLearningAgentModel}`: the model type to build
-- `data::NamedTuple`: the data to use to build the model
-
 The `data` `NamedTuple` must contain the following keys:
 - `states::Array{Int,1}`: the state space
 - `actions::Array{Int,1}`: the action space
 - `α::Float64`: the learning rate
 - `γ::Float64`: the discount factor
 - `Q::Array{Float64,2}`: the initial Q-value table
-
-### Returns
-- `MyQLearningAgentModel`: a populated Q-learning agent model
 """
 function build(modeltype::Type{MyQLearningAgentModel}, data::NamedTuple)::MyQLearningAgentModel
 
@@ -119,39 +105,56 @@ function build(modeltype::Type{MyQLearningAgentModel}, data::NamedTuple)::MyQLea
 end
 
 """
-    build(modeltype::Type{MyExperimentalDrugCocktailContext}, data::NamedTuple) -> MyExperimentalDrugCocktailContext
+    build(modeltype::Type{MyAdaptiveDosingModel}, data::NamedTuple) -> MyAdaptiveDosingModel
 
-Builds a `MyExperimentalDrugCocktailContext` from data in a `NamedTuple`.
-
-### Arguments
-- `modeltype::Type{MyExperimentalDrugCocktailContext}`: the model type to build
-- `data::NamedTuple`: the data to use to build the model
+Builds a `MyAdaptiveDosingModel` from data in a `NamedTuple`, including the
+state-grid index maps `coordinates` and `states`.
 
 The `data` `NamedTuple` must contain the following keys:
-- `K::Int64`: number of drug types
-- `m::Int64`: number of concentration levels per drug type
-- `γ::Array{Float64,1}`: effectiveness parameters
-- `B::Float64`: total budget in USD
-- `cost::Dict{Int, Float64}`: maps drug type to cost per mg/kg
-- `levels::Dict{Int, NamedTuple}`: maps drug type to its concentration levels in mg/kg
-- `W::Float64`: weight of the patient in kg
-
-### Returns
-- `MyExperimentalDrugCocktailContext`: a populated experimental drug cocktail context
+- `nlevels::Int`: number of grid levels per axis
+- `doses::Array{Float64,1}`: dose magnitude for each action
+- `g, k, a, c::Float64`: tumor growth, kill, toxicity loading, and clearance parameters
+- `Tcure, Zlethal::Float64`: cured and toxic-death thresholds
+- `wT, wZ, cost, Rcure, Rdead::Float64`: reward parameters
 """
-function build(modeltype::Type{MyExperimentalDrugCocktailContext}, data::NamedTuple)::MyExperimentalDrugCocktailContext
+function build(modeltype::Type{MyAdaptiveDosingModel}, data::NamedTuple)::MyAdaptiveDosingModel
 
-    # create new context instance -
-    context = modeltype()
+    # initialize an empty model -
+    model = modeltype();
 
-    # populate context fields from data -
-    context.K = data.K
-    context.m = data.m
-    context.γ = data.γ
-    context.B = data.B
-    context.cost = data.cost
-    context.levels = data.levels
-    context.W = data.W
+    # grid bookkeeping -
+    nlevels = data[:nlevels];
+    model.nlevels = nlevels;
+    model.step = 1.0/(nlevels - 1);   # levels are 0, step, …, 1
 
-    return context
+    # build the (iT, iZ) <-> state index maps -
+    coordinates = Dict{Int,Tuple{Int,Int}}();
+    states = Dict{Tuple{Int,Int},Int}();
+    s = 1;
+    for iT ∈ 1:nlevels
+        for iZ ∈ 1:nlevels
+            coordinates[s] = (iT, iZ);
+            states[(iT, iZ)] = s;
+            s += 1;
+        end
+    end
+    model.coordinates = coordinates;
+    model.states = states;
+
+    # actions and parameters -
+    model.doses = data[:doses];
+    model.g = data[:g];
+    model.k = data[:k];
+    model.a = data[:a];
+    model.c = data[:c];
+    model.Tcure = data[:Tcure];
+    model.Zlethal = data[:Zlethal];
+    model.wT = data[:wT];
+    model.wZ = data[:wZ];
+    model.cost = data[:cost];
+    model.Rcure = data[:Rcure];
+    model.Rdead = data[:Rdead];
+
+    # return -
+    return model
 end
