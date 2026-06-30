@@ -155,27 +155,32 @@ function world(model::MyAdaptiveDosingModel, s::Int, a::Int)::Tuple{Int,Float64}
     return (s′, r);
 end
 
+# ===== GENERIC TABULAR-MDP SOLVERS ========================================================================== #
+# These work on any AbstractTabularMDP that provides world(...), isterminal(...), and _nactions(...).
+_nstates(model::AbstractTabularMDP)::Int     = model.nlevels^2;
+_nactions(model::MyAdaptiveDosingModel)::Int = length(model.doses);
+
 """
-    solve(model::MyAdaptiveDosingModel; γ::Float64 = 0.95, tol::Float64 = 1e-8,
+    solve(model::AbstractTabularMDP; γ::Float64 = 0.95, tol::Float64 = 1e-8,
         maxiter::Int = 20000) -> Array{Float64,2}
 
-Compute the optimal action-value table `Q★` for the dosing environment by **value iteration**
-(this is the model-based ground truth, since the dynamics in `world(...)` are known). Returns
-a `nstates × nactions` matrix; the optimal policy is `policy(Q★)`.
+Compute the optimal action-value table `Q★` by **value iteration** (the model-based ground
+truth, since the dynamics in `world(...)` are known). Returns a `nstates × nactions` matrix;
+the optimal policy is `policy(Q★)`.
 """
-function solve(model::MyAdaptiveDosingModel; γ::Float64 = 0.95, tol::Float64 = 1e-8,
+function solve(model::AbstractTabularMDP; γ::Float64 = 0.95, tol::Float64 = 1e-8,
     maxiter::Int = 20000)::Array{Float64,2}
 
-    nstates  = model.nlevels^2;
-    nactions = length(model.doses);
+    ns = _nstates(model);
+    na = _nactions(model);
 
     # precompute the transition and reward tables -
-    S′ = Array{Int,2}(undef, nstates, nactions);
-    R  = Array{Float64,2}(undef, nstates, nactions);
-    terminal = falses(nstates);
-    for s ∈ 1:nstates
+    S′ = Array{Int,2}(undef, ns, na);
+    R  = Array{Float64,2}(undef, ns, na);
+    terminal = falses(ns);
+    for s ∈ 1:ns
         terminal[s] = isterminal(model, s);
-        for a ∈ 1:nactions
+        for a ∈ 1:na
             (s′, r) = world(model, s, a);
             S′[s,a] = s′;
             R[s,a]  = r;
@@ -183,13 +188,13 @@ function solve(model::MyAdaptiveDosingModel; γ::Float64 = 0.95, tol::Float64 = 
     end
 
     # value iteration on the state-value function U -
-    U = zeros(nstates);
+    U = zeros(ns);
     for _ ∈ 1:maxiter
         Δ = 0.0;
-        for s ∈ 1:nstates
+        for s ∈ 1:ns
             terminal[s] && continue;
             best = -Inf;
-            for a ∈ 1:nactions
+            for a ∈ 1:na
                 q = R[s,a] + γ*U[S′[s,a]];
                 best = max(best, q);
             end
@@ -200,10 +205,10 @@ function solve(model::MyAdaptiveDosingModel; γ::Float64 = 0.95, tol::Float64 = 
     end
 
     # assemble the optimal action-value table Q★ -
-    Q = zeros(nstates, nactions);
-    for s ∈ 1:nstates
+    Q = zeros(ns, na);
+    for s ∈ 1:ns
         terminal[s] && continue;
-        for a ∈ 1:nactions
+        for a ∈ 1:na
             Q[s,a] = R[s,a] + γ*U[S′[s,a]];
         end
     end
@@ -212,27 +217,27 @@ function solve(model::MyAdaptiveDosingModel; γ::Float64 = 0.95, tol::Float64 = 
 end
 
 """
-    solve(agent::MyQLearningAgentModel, model::MyAdaptiveDosingModel;
+    solve(agent::MyQLearningAgentModel, model::AbstractTabularMDP;
         episodes::Int = 200_000, maxsteps::Int = 80) -> MyQLearningAgentModel
 
-Train the Q-learning agent on the dosing environment **model-free** (the agent only sees
-sampled transitions `(s, a, r, s′)` from `world(...)`; it does not use the dynamics directly).
-Each episode starts from a random non-terminal state and runs until an absorbing state or
+Train the Q-learning agent on the environment **model-free** (the agent only sees sampled
+transitions `(s, a, r, s′)` from `world(...)`; it does not use the dynamics directly). Each
+episode starts from a random non-terminal state and runs until an absorbing state or
 `maxsteps`. The step size follows a `1/N(s,a)` (sample-average) schedule, which satisfies the
 Robbins–Monro convergence conditions; exploration is ε-greedy with ε annealed over episodes.
 Returns the agent with its learned `Q` table; the learned policy is `policy(agent.Q)`.
 """
-function solve(agent::MyQLearningAgentModel, model::MyAdaptiveDosingModel;
+function solve(agent::MyQLearningAgentModel, model::AbstractTabularMDP;
     episodes::Int = 200_000, maxsteps::Int = 80)::MyQLearningAgentModel
 
     Q = agent.Q;
     γ = agent.γ;
-    nstates  = model.nlevels^2;
-    nactions = length(model.doses);
-    N = zeros(Int, nstates, nactions); # visit counts for the 1/N step size
+    ns = _nstates(model);
+    na = _nactions(model);
+    N = zeros(Int, ns, na); # visit counts for the 1/N step size
 
     # non-terminal start states -
-    starts = [s for s ∈ 1:nstates if isterminal(model, s) == false];
+    starts = [s for s ∈ 1:ns if isterminal(model, s) == false];
 
     for ep ∈ 1:episodes
         ϵ = max(0.05, 1.0 - ep/(0.7*episodes)); # anneal exploration
@@ -241,7 +246,7 @@ function solve(agent::MyQLearningAgentModel, model::MyAdaptiveDosingModel;
             isterminal(model, s) && break;
 
             # ε-greedy action -
-            a = (rand() < ϵ) ? rand(1:nactions) : argmax(@view Q[s,:]);
+            a = (rand() < ϵ) ? rand(1:na) : argmax(@view Q[s,:]);
 
             # sample the world -
             (s′, r) = world(model, s, a);
@@ -284,6 +289,125 @@ function simulate(model::MyAdaptiveDosingModel, π::Array{Int,1}, s0::Int; maxst
         (s, _) = world(model, s, a);
     end
     return (T = Ts, Z = Zs, dose = us, outcome = :timeout, steps = maxsteps);
+end
+
+# ===== FED-BATCH BIOREACTOR ENVIRONMENT (3-D: biomass, lactate, volume) ===================================== #
+# PRIVATE METHODS BELOW HERE ================================================================================= #
+_Xof(m::MyFedBatchBioreactorModel, i::Int)::Float64 = (i - 1)*m.step;
+_Lof(m::MyFedBatchBioreactorModel, j::Int)::Float64 = (j - 1)*m.step;
+_Vof(m::MyFedBatchBioreactorModel, k::Int)::Float64 = (k - 1)*m.step;
+_snap(m::MyFedBatchBioreactorModel, x::Float64)::Int = clamp(round(Int, x/m.step) + 1, 1, m.nlevels);
+_iscrash(m::MyFedBatchBioreactorModel, j::Int)::Bool   = _Lof(m, j) ≥ m.Lcrash;
+_isharvest(m::MyFedBatchBioreactorModel, k::Int)::Bool = _Vof(m, k) ≥ m.Vmax;
+# PRIVATE METHODS ABOVE HERE ================================================================================= #
+
+_nstates(model::MyFedBatchBioreactorModel)::Int  = model.nlevels^3;
+_nactions(model::MyFedBatchBioreactorModel)::Int = length(model.feeds);
+
+"""
+    stateindex(model::MyFedBatchBioreactorModel, X::Float64, L::Float64, V::Float64) -> Int
+
+Return the grid state index nearest to the continuous culture state `(X, L, V)`.
+"""
+stateindex(model::MyFedBatchBioreactorModel, X::Float64, L::Float64, V::Float64)::Int =
+    model.states[(_snap(model, X), _snap(model, L), _snap(model, V))];
+
+"""
+    decode(model::MyFedBatchBioreactorModel, s::Int) -> Tuple{Float64,Float64,Float64}
+
+Return the continuous culture state `(X, L, V)` for grid state index `s`.
+"""
+function decode(model::MyFedBatchBioreactorModel, s::Int)::Tuple{Float64,Float64,Float64}
+    (i, j, k) = model.coordinates[s];
+    return (_Xof(model, i), _Lof(model, j), _Vof(model, k));
+end
+
+"""
+    isterminal(model::MyFedBatchBioreactorModel, s::Int) -> Bool
+
+Return `true` if state `s` is absorbing — the culture has crashed on lactate (`L ≥ Lcrash`)
+or the reactor has filled and been harvested (`V ≥ Vmax`).
+"""
+function isterminal(model::MyFedBatchBioreactorModel, s::Int)::Bool
+    (_, j, k) = model.coordinates[s];
+    return _iscrash(model, j) || _isharvest(model, k);
+end
+
+"""
+    world(model::MyFedBatchBioreactorModel, s::Int, a::Int) -> Tuple{Int,Float64}
+
+The fed-batch environment dynamics. Given state `s` and action `a` (a feed rate `f`), return
+the next state `s′` and the reward `r`. The feed adds volume `ΔV = vfeed·f` and sets the
+dilution rate `D = ΔV/V`. Biomass `X` grows by Monod kinetics in the feed with lactate
+inhibition, minus first-order death and dilution; lactate `L` is produced by overflow
+(feed × biomass) and removed by consumption and dilution; volume `V` rises by `ΔV`. The reward
+is `0` until the reactor fills (`V ≥ Vmax`), when the product `qP·X·V` is harvested; reaching
+`L ≥ Lcrash` first gives the crash penalty. Absorbing states return `(s, 0.0)`.
+"""
+function world(model::MyFedBatchBioreactorModel, s::Int, a::Int)::Tuple{Int,Float64}
+
+    (i, j, k) = model.coordinates[s];
+    (_iscrash(model, j) || _isharvest(model, k)) && return (s, 0.0); # absorbing
+
+    # current state and feed -
+    X = _Xof(model, i);
+    L = _Lof(model, j);
+    V = _Vof(model, k);
+    f = model.feeds[a];
+
+    # one-cycle dynamics with dilution D = F/V -
+    ΔV = model.vfeed*f;
+    D  = ΔV / max(V, model.step);                                        # guard the empty-reactor plane
+    μ  = model.mumax * (f/(model.Kf + f)) * (model.KIL/(model.KIL + L)); # Monod in feed, lactate-inhibited
+    X′ = clamp(X + μ*X*(1 - X) - model.kd*X - D*X,  0.0, 1.0);           # growth, death, dilution
+    L′ = clamp(L + model.yL*f*X - model.kL*L - D*L, 0.0, 1.0);           # overflow, consumption, dilution
+    V′ = clamp(V + ΔV,                              0.0, 1.0);           # volume rises with feed
+
+    # snap to the grid and look up the next state -
+    i′ = _snap(model, X′);
+    j′ = _snap(model, L′);
+    k′ = _snap(model, V′);
+    s′ = model.states[(i′, j′, k′)];
+
+    # reward: crash penalty, else harvest payoff when the reactor fills, else nothing yet -
+    r = 0.0;
+    if (_iscrash(model, j′) == true)
+        r = model.Rcrash;
+    elseif (_isharvest(model, k′) == true)
+        r = model.qP * _Xof(model, i′) * _Vof(model, k′);
+    end
+
+    return (s′, r);
+end
+
+"""
+    simulate(model::MyFedBatchBioreactorModel, π::Array{Int,1}, s0::Int; maxsteps::Int = 80)
+
+Roll out policy `π` from start state `s0`. Returns a named tuple with the trajectory vectors
+`X`, `L`, `V`, `feed`, the harvested `product` (`qP·X·V` at harvest, or `0` if the culture
+crashed or never filled), the `outcome` (`:harvest`, `:crash`, or `:timeout`), and the number
+of feeding `steps` taken.
+"""
+function simulate(model::MyFedBatchBioreactorModel, π::Array{Int,1}, s0::Int; maxsteps::Int = 80)
+    Xs = Float64[]; Ls = Float64[]; Vs = Float64[]; fs = Float64[];
+    s = s0;
+    for t ∈ 1:maxsteps
+        (i, j, k) = model.coordinates[s];
+        push!(Xs, _Xof(model, i));
+        push!(Ls, _Lof(model, j));
+        push!(Vs, _Vof(model, k));
+        if (_iscrash(model, j) || _isharvest(model, k))
+            push!(fs, 0.0);
+            crashed = _iscrash(model, j);
+            harvested = crashed ? 0.0 : model.qP * _Xof(model, i) * _Vof(model, k);
+            return (X = Xs, L = Ls, V = Vs, feed = fs, product = harvested,
+                outcome = (crashed ? :crash : :harvest), steps = t - 1);
+        end
+        a = π[s];
+        push!(fs, model.feeds[a]);
+        (s, _) = world(model, s, a);
+    end
+    return (X = Xs, L = Ls, V = Vs, feed = fs, product = 0.0, outcome = :timeout, steps = maxsteps);
 end
 
 # ===== POLICY EXTRACTION (shared) =========================================================================== #

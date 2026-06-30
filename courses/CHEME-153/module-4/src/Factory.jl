@@ -158,3 +158,61 @@ function build(modeltype::Type{MyAdaptiveDosingModel}, data::NamedTuple)::MyAdap
     # return -
     return model
 end
+
+"""
+    build(modeltype::Type{MyFedBatchBioreactorModel}, data::NamedTuple) -> MyFedBatchBioreactorModel
+
+Builds a `MyFedBatchBioreactorModel` from data in a `NamedTuple`, including the state-grid
+index maps `coordinates` and `states`.
+
+The `data` `NamedTuple` must contain the following keys:
+- `nlevels::Int`: number of grid levels per axis
+- `feeds::Array{Float64,1}`: feed-rate fraction for each action
+- `mumax, Kf, KIL, kd, yL, kL, qP::Float64`: growth, feed, inhibition, death, lactate, and productivity parameters
+- `vfeed, V0, Vmax::Float64`: volume added per cycle at full feed, initial volume, and harvest volume
+- `Lcrash, Rcrash::Float64`: culture-crash threshold and penalty
+"""
+function build(modeltype::Type{MyFedBatchBioreactorModel}, data::NamedTuple)::MyFedBatchBioreactorModel
+
+    # initialize an empty model -
+    model = modeltype();
+
+    # grid bookkeeping -
+    nlevels = data[:nlevels];
+    model.nlevels = nlevels;
+    model.step = 1.0/(nlevels - 1);   # levels are 0, step, …, 1
+
+    # build the (iX, iL, iV) <-> state index maps -
+    coordinates = Dict{Int,Tuple{Int,Int,Int}}();
+    states = Dict{Tuple{Int,Int,Int},Int}();
+    s = 1;
+    for iX ∈ 1:nlevels
+        for iL ∈ 1:nlevels
+            for iV ∈ 1:nlevels
+                coordinates[s] = (iX, iL, iV);
+                states[(iX, iL, iV)] = s;
+                s += 1;
+            end
+        end
+    end
+    model.coordinates = coordinates;
+    model.states = states;
+
+    # actions and parameters -
+    model.feeds = data[:feeds];
+    model.mumax = data[:mumax];
+    model.Kf = data[:Kf];
+    model.KIL = data[:KIL];
+    model.kd = data[:kd];
+    model.yL = data[:yL];
+    model.kL = data[:kL];
+    model.qP = data[:qP];
+    model.vfeed = data[:vfeed];
+    model.V0 = data[:V0];
+    model.Vmax = data[:Vmax];
+    model.Lcrash = data[:Lcrash];
+    model.Rcrash = data[:Rcrash];
+
+    # return -
+    return model
+end
