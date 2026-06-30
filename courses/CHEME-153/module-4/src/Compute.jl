@@ -338,7 +338,7 @@ end
 
 The fed-batch environment dynamics. Given state `s` and action `a` (a feed rate `f`), return
 the next state `s′` and the reward `r`. The feed adds volume `ΔV = vfeed·f` and sets the
-dilution rate `D = ΔV/V`. Biomass `X` grows by Monod kinetics in the feed with lactate
+per-cycle dilution `D = ΔV/V` (forward Euler with Δt = one feed cycle). Biomass `X` grows by Monod kinetics in the feed with lactate
 inhibition, minus first-order death and dilution; lactate `L` is produced by overflow
 (feed × biomass) and removed by consumption and dilution; volume `V` rises by `ΔV`. The reward
 is `0` until the reactor fills (`V ≥ Vmax`), when the product `qP·X·V` is harvested; reaching
